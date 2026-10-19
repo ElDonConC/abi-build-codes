@@ -12,7 +12,7 @@ styles.css        estilos (tema oscuro, responsive)
 app.js            buscador, filtros, orden, copiado de códigos
 data/*.json       datos volcados desde el xlsx (aquí se engancha Supabase después)
 scripts/extract.py extrae el xlsx → data/*.json
-.github/workflows/deploy.yml  despliegue automático a GitHub Pages
+.github/workflows/deploy.yml  despliegue con Actions (opcional, local; ver Publicación)
 ```
 
 ## Regenerar los datos
@@ -31,22 +31,29 @@ python3 -m http.server 8080
 # abre http://localhost:8080
 ```
 
-## Subir a GitHub Pages
+## Publicación
 
-1. Crear el repositorio y hacer push:
+**En vivo: https://eldonconc.github.io/abi-build-codes/** (repositorio: `ElDonConC/abi-build-codes`)
+
+GitHub Pages está configurado con *Settings → Pages → Source → Deploy from a branch*
+(`main`, raíz). Cualquier `git push` a `main` vuelve a publicar:
 
 ```bash
-git init
-git add .
-git commit -m "Catálogo ABI: web estática con builds de Arena Breakout Infinite"
-git branch -M main
-git remote add origin https://github.com/<usuario>/<repo>.git
-git push -u origin main
+git add -A
+git commit -m "Actualización de datos"
+git push
 ```
 
-2. En GitHub: **Settings → Pages → Source → GitHub Actions**.
-3. Cada push a `main` despliega solo (workflow `deploy.yml`). La URL quedará en
-   `https://<usuario>.github.io/<repo>/`.
+Si en el futuro se quiere el despliegue con Actions
+(`.github/workflows/deploy.yml`, local), primero hay que re-autenticar el token
+con scope `workflow`:
+
+```bash
+gh auth refresh -h github.com -s workflow
+git add .github/workflows/deploy.yml   # quitar .github/workflows/ de .gitignore
+```
+
+Y en **Settings → Pages → Source** cambiar a *GitHub Actions*.
 
 Las rutas de `app.js`/`index.html` son relativas (`./data/...`), así que funciona
 también en un repo con nombre de proyecto o en un dominio propio.
