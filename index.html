@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABI Build Codes — Catálogo de builds de Arena Breakout: Infinite</title>
+<meta name="description" content="Catálogo de códigos de build de armas de Arena Breakout: Infinite con buscador, filtros por clase y nivel económico, y fuentes verificadas.">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">ABI</span>
+      <div>
+        <h1>Build Codes · Arena Breakout: Infinite</h1>
+        <p class="tagline">Catálogo de códigos de configuración de armas · fuentes y verificación incluidas</p>
+      </div>
+    </div>
+    <dl class="stats" id="stats">
+      <div><dt>Builds</dt><dd id="stat-builds">—</dd></div>
+      <div><dt>Armas</dt><dd id="stat-armas">—</dd></div>
+      <div><dt>Sin código</dt><dd id="stat-sin">—</dd></div>
+    </dl>
+  </div>
+</header>
+
+<nav class="tabs wrap" id="tabs" role="tablist">
+  <button class="tab is-active" data-tab="builds" role="tab" aria-selected="true">Builds</button>
+  <button class="tab" data-tab="armas" role="tab" aria-selected="false">Índice de armas</button>
+  <button class="tab" data-tab="sin_build" role="tab" aria-selected="false">Sin build</button>
+  <button class="tab" data-tab="lista" role="tab" aria-selected="false">Lista compartida</button>
+  <button class="tab" data-tab="fuentes" role="tab" aria-selected="false">Fuentes</button>
+  <button class="tab" data-tab="leeme" role="tab" aria-selected="false">Acerca de</button>
+</nav>
+
+<main class="wrap">
+  <p class="notice">Códigos comunitarios: siempre verifica en el cliente antes de gastar Koen. Las fuentes se indican en cada fila.</p>
+
+  <!-- BUILDS -->
+  <section id="panel-builds" class="panel is-active" role="tabpanel">
+    <div class="controls">
+      <input type="search" id="q" placeholder="Buscar arma, etiqueta, código o fuente…" aria-label="Buscar builds" autocomplete="off">
+      <select id="f-clase" aria-label="Filtrar por clase"><option value="">Todas las clases</option></select>
+      <select id="f-nivel" aria-label="Filtrar por nivel económico"><option value="">Todos los niveles</option></select>
+      <select id="f-orden" aria-label="Ordenar">
+        <option value="arma">Orden: arma (A–Z)</option>
+        <option value="precio_asc">Precio: menor a mayor</option>
+        <option value="precio_desc">Precio: mayor a menor</option>
+        <option value="nivel">Nivel económico</option>
+      </select>
+      <button id="q-clear" class="btn-ghost" type="button">Limpiar</button>
+    </div>
+    <p class="count" id="count-builds"></p>
+    <div class="list" id="list-builds"></div>
+  </section>
+
+  <!-- ARMAS -->
+  <section id="panel-armas" class="panel" role="tabpanel" hidden>
+    <div class="controls">
+      <input type="search" id="q-armas" placeholder="Buscar arma, clase, estado…" aria-label="Buscar armas" autocomplete="off">
+      <select id="f-clase-armas" aria-label="Filtrar por clase"><option value="">Todas las clases</option></select>
+    </div>
+    <p class="count" id="count-armas"></p>
+    <div class="list" id="list-armas"></div>
+  </section>
+
+  <!-- SIN BUILD -->
+  <section id="panel-sin_build" class="panel" role="tabpanel" hidden>
+    <p class="count" id="count-sin"></p>
+    <div class="list" id="list-sin"></div>
+  </section>
+
+  <!-- LISTA -->
+  <section id="panel-lista" class="panel" role="tabpanel" hidden>
+    <div class="controls">
+      <input type="search" id="q-lista" placeholder="Buscar arma o código…" aria-label="Buscar en la lista" autocomplete="off">
+      <select id="f-clase-lista" aria-label="Filtrar por clase"><option value="">Todas las clases</option></select>
+    </div>
+    <p class="count" id="count-lista"></p>
+    <div class="list" id="list-lista"></div>
+  </section>
+
+  <!-- FUENTES -->
+  <section id="panel-fuentes" class="panel" role="tabpanel" hidden>
+    <div class="list" id="list-fuentes"></div>
+  </section>
+
+  <!-- LEEME -->
+  <section id="panel-leeme" class="panel" role="tabpanel" hidden>
+    <div class="list" id="list-leeme"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Datos derivados de <code>Catalogo_ABI_CORREGIDO_compatible.xlsx</code>. Los códigos pertenecen a sus fuentes originales.</p>
+    <p class="muted">Proyecto no oficial, sin relación con Morefun Studios ni Level Infinite.</p>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="./app.js"></script>
+</body>
+</html>

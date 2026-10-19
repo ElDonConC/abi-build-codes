@@ -1,0 +1,164 @@
+[
+ {
+  "id": 1,
+  "nombre": "Anuncio oficial Season 7 — armas nuevas",
+  "tipo": "Oficial / Steam News",
+  "fecha": "16 sep 2026 (S7)",
+  "aporta": "Confirma A545 y AK-15SC como armas nuevas de Season 7.",
+  "limitaciones": "No publica códigos de modificación de armas.",
+  "url": "https://steamcommunity.com/app/2073620/announcements/"
+ },
+ {
+  "id": 2,
+  "nombre": "Weapon registry — ABI Database",
+  "tipo": "Base de datos comunitaria",
+  "fecha": "Actualización visible: 10 sep 2026; patch 1.0.0.142.19",
+  "aporta": "Índice de 91 registros y clases de armas. Se usa como roster de referencia para no olvidar armas.",
+  "limitaciones": "Es una instantánea pre-S7; 20 registros aparecen sin estadísticas verificadas. No debe tratarse como lista oficial del publisher.",
+  "url": "https://arenabreakout-infinite.com/weapons/"
+ },
+ {
+  "id": 3,
+  "nombre": "#ABIGuideS7: mods para novatos",
+  "tipo": "Reddit / comunidad",
+  "fecha": "21 sep 2026 (S7)",
+  "aporta": "Códigos y costes estimados para SCAR-L, M4A1, MP5 y MPX.",
+  "limitaciones": "Estimaciones de Koen del autor; builds no probadas dentro del cliente del usuario.",
+  "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wmh5an/abiguides7_weapon_choice_mods_and_some_zombie_tips/"
+ },
+ {
+  "id": 4,
+  "nombre": "More detailed 50k–320k",
+  "tipo": "Reddit / comunidad",
+  "fecha": "Publicación consultada 16 oct 2026; título menciona 30/09",
+  "aporta": "Códigos para rifles, SMG, DMR y precios aproximados por build.",
+  "limitaciones": "Una misma cadena se publica para FAL y MDR; se marca como probable error. El precio puede ser de mercado/versión distinta.",
+  "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/"
+ },
+ {
+  "id": 5,
+  "nombre": "Gun builds 100k–250k",
+  "tipo": "Reddit / comunidad",
+  "fecha": "Publicación consultada 16 oct 2026; rango indicado en el título",
+  "aporta": "Variantes de códigos para varias clases y armas.",
+  "limitaciones": "El rango pertenece al hilo; no se asigna como precio individual por código.",
+  "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/"
+ },
+ {
+  "id": 6,
+  "nombre": "Gun build codes for starter 70k–400k",
+  "tipo": "Reddit / comunidad",
+  "fecha": "Publicación consultada 16 oct 2026; rango indicado en el título",
+  "aporta": "Lista amplia de códigos starter por arma.",
+  "limitaciones": "El rango es general; no se inventan precios específicos para los códigos.",
+  "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/"
+ },
+ {
+  "id": 7,
+  "nombre": "Gun build codes Updated V5",
+  "tipo": "Reddit / comunidad",
+  "fecha": "24 jul 2026",
+  "aporta": "Builds económicas para AR, SMG, DMR y pistola.",
+  "limitaciones": "Sin precio individual; incluye al menos un posible error de nombre (M4A4).",
+  "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/"
+ },
+ {
+  "id": 8,
+  "nombre": "Gun build codes Updated V3",
+  "tipo": "Reddit / comunidad",
+  "fecha": "7 abr 2026",
+  "aporta": "Otra lista independiente de códigos económicos.",
+  "limitaciones": "Versión anterior a Season 7; requiere probar tras el parche.",
+  "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/"
+ },
+ {
+  "id": 9,
+  "nombre": "Season 6 Weapon Builds ABI 2.0 — Tentr4",
+  "tipo": "YouTube / creador",
+  "fecha": "8 jul 2026; Season 6",
+  "aporta": "Descripción con más de 40 códigos de armas y algunas etiquetas de coste/estilo.",
+  "limitaciones": "Histórica; puede no funcionar después de Season 7. Se conserva por cobertura, con aviso.",
+  "url": "https://www.youtube.com/watch?v=O1iJDcabwMk"
+ },
+ {
+  "id": 10,
+  "nombre": "The Grand Guide of Arena Breakout (for newbies)",
+  "tipo": "Steam Community / guía",
+  "fecha": "Actualizada 21 ene 2026",
+  "aporta": "Códigos de 1911, Desert Eagle, MP-133, Mosin, MCX, AK-12, AR-57, M110, Vector .45 y USAS-12 con precios aproximados.",
+  "limitaciones": "Pre-S7; los códigos aparecen sin prefijo. Se conserva exactamente como la guía los publica.",
+  "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243"
+ },
+ {
+  "id": 11,
+  "nombre": "Low Cost Gun Builds",
+  "tipo": "Steam Community / guía antigua",
+  "fecha": "4 oct 2025; actualizada 30 ene",
+  "aporta": "Códigos de bajo coste para rifles, subfusiles, DMR, escopetas y RPK-16 con precios históricos.",
+  "limitaciones": "La página aparece eliminada/incompatible con ABI en Steam; solo referencia histórica, no asumir que los códigos funcionan.",
+  "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875"
+ },
+ {
+  "id": 12,
+  "nombre": "Importar y reparar builds",
+  "tipo": "Gamers.Wiki / guía técnica",
+  "fecha": "16 sep 2026",
+  "aporta": "Aclara diferencia entre `Mod Gun-` (Gunsmith) y `Equipment-` (Preset Build de Storage) y cómo revisar códigos.",
+  "limitaciones": "Describe el flujo de Season 6 y advierte que debe revalidarse tras el cambio a S7.",
+  "url": "https://gamers.wiki/es/juegos/arena-breakout-infinite/guias/arena-breakout-infinite-importar-y-reparar-builds"
+ },
+ {
+  "id": 13,
+  "nombre": "ABI Builder — catálogos/builds",
+  "tipo": "Base comunitaria de configuraciones",
+  "fecha": "Consultada 16 oct 2026",
+  "aporta": "Builds con código, precio aproximado, tipo de configuración y métricas cuando están disponibles.",
+  "limitaciones": "Contenido comunitario; los precios cambian y no prueba que cada código siga vigente en cliente.",
+  "url": "https://abibuilder.com/builds"
+ },
+ {
+  "id": 14,
+  "nombre": "ABI Builder — guía Season 7",
+  "tipo": "Guía comunitaria de configuraciones",
+  "fecha": "Consultada 16 oct 2026",
+  "aporta": "Builds de temporada 7 etiquetadas como meta/económicas para varias armas.",
+  "limitaciones": "La fecha individual varía por página; revisar dentro del juego.",
+  "url": "https://abibuilder.com/guides/s7-builds"
+ },
+ {
+  "id": 15,
+  "nombre": "Tentr4 — How to Customize Weapons / códigos en descripción",
+  "tipo": "YouTube / creador hispanohablante",
+  "fecha": "9 abr 2026",
+  "aporta": "Publica una serie extensa de builds con prefijo Mod Gun- (AKM, M4, FAL, H416, MDR, subfusiles, francotiradores y más); confirma el formato habitual.",
+  "limitaciones": "Es una serie/códigos diferentes a varios códigos del usuario; no valida automáticamente su lista exacta. La publicación es anterior a S7.",
+  "url": "https://www.youtube.com/watch?v=tQ03i3EmOjs"
+ },
+ {
+  "id": 16,
+  "nombre": "Steam Community — 200k M4A1 build",
+  "tipo": "Foro Steam Community",
+  "fecha": "17 nov 2025",
+  "aporta": "Ejemplo comunitario de build compartido como ID sin prefijo: 3fgGUpFkWqOrUz4.",
+  "limitaciones": "Guía antigua; se incluye para documentar por qué algunas páginas muestran el payload sin Mod Gun-. No confirma que todos los clientes acepten el mismo formato.",
+  "url": "https://steamcommunity.com/app/2073620/discussions/0/681860127366781769/"
+ },
+ {
+  "id": 17,
+  "nombre": "Lista histórica compartida por usuario — bloques 1, 2 y 3",
+  "tipo": "Lista aportada en esta conversación",
+  "fecha": "Fecha no indicada",
+  "aporta": "105 códigos agregados al catálogo y conservados en una hoja de auditoría con el código original y el campo normalizado listo para copiar.",
+  "limitaciones": "No se encontró coincidencia pública exacta para códigos representativos como 3fN662nMILad5P4c4 y 3fSzErerNKw7wP4Bf. El resto no se cotejó uno por uno; vigencia pendiente de importar en el cliente.",
+  "url": null
+ },
+ {
+  "id": 18,
+  "nombre": "Búsqueda de códigos exactos en fuentes públicas",
+  "tipo": "Validación de búsqueda web",
+  "fecha": "16 oct 2026",
+  "aporta": "Consultas por cadenas representativas de la primera y segunda familia de códigos compartida.",
+  "limitaciones": "No aparecer en los resultados indexados no demuestra que el código sea falso; solo que no hubo coincidencia pública exacta en la búsqueda realizada.",
+  "url": null
+ }
+]

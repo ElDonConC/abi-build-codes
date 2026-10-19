@@ -1,0 +1,34 @@
+[
+ {
+  "tema": "Código listo para copiar",
+  "detalle": "En la tabla principal, copia la columna H. Para códigos de arma incluye el prefijo Mod Gun- cuando la fuente solo publicó el identificador. El original se conserva en la columna I."
+ },
+ {
+  "tema": "Códigos del usuario",
+  "detalle": "La pestaña Lista aportada contiene los 105 códigos compartidos, con código original y formato listo para copiar."
+ },
+ {
+  "tema": "Organización",
+  "detalle": "Todas las builds está ordenada por arma y nivel económico. Las pestañas por categoría muestran subconjuntos para consultar más rápido."
+ },
+ {
+  "tema": "Fuentes",
+  "detalle": "Consulta Fuentes y formato para ver páginas de ABI Builder, Reddit, Steam, YouTube y una guía técnica en español."
+ },
+ {
+  "tema": "Precio",
+  "detalle": "Barata hasta 150.000 Koen; Media entre 150.001 y 350.000; Premium superior a 350.000. Los precios son referencias publicadas, no cotizaciones en vivo."
+ },
+ {
+  "tema": "Verificación",
+  "detalle": "No se probó cada código dentro del cliente. El prefijo normalizado no garantiza vigencia. Revisa la columna Estado / verificación."
+ },
+ {
+  "tema": "Lista antigua",
+  "detalle": "Los códigos de las temporadas anteriores pueden dejar de funcionar tras actualizaciones. Los códigos aportados por el usuario se conservan sin declarar que estén verificados."
+ },
+ {
+  "tema": "Filtros",
+  "detalle": "Este archivo usa rangos simples compatibles. En Excel puedes seleccionar la fila 4 y activar Datos > Filtro para filtrar por arma, clase, precio, economía o fuente."
+ }
+]
