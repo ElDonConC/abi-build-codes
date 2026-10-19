@@ -9,10 +9,11 @@ Web estática (HTML/CSS/JS puro) con el catálogo completo del xlsx
 ```
 index.html        interfaz (pestañas: Builds, Índice, Sin build, Lista, Fuentes, Acerca de)
 styles.css        estilos (tema oscuro, responsive)
-app.js            buscador, filtros, orden, copiado de códigos
-data/*.json       datos volcados desde el xlsx (aquí se engancha Supabase después)
+app.js            buscador, filtros, orden, copiado de códigos, panel de verificación
+data/*.json       datos volcados desde el xlsx + monitor.json (aquí se engancha Supabase)
 scripts/extract.py extrae el xlsx → data/*.json
-.github/workflows/deploy.yml  despliegue con Actions (opcional, local; ver Publicación)
+scripts/monitor.py comprueba fuentes, revalida códigos y detecta candidatos nuevos
+.github/workflows/update-data.yml  job diario que ejecuta monitor.py y publica
 ```
 
 ## Regenerar los datos
@@ -44,19 +45,38 @@ git commit -m "Actualización de datos"
 git push
 ```
 
-Si en el futuro se quiere el despliegue con Actions
-(`.github/workflows/deploy.yml`, local), primero hay que re-autenticar el token
-con scope `workflow`:
-
-```bash
-gh auth refresh -h github.com -s workflow
-git add .github/workflows/deploy.yml   # quitar .github/workflows/ de .gitignore
-```
-
-Y en **Settings → Pages → Source** cambiar a *GitHub Actions*.
+Si en el futuro se quiere añadir otro workflow de Actions, el token de `gh`
+necesita scope `workflow` (`gh auth refresh -h github.com -s workflow`).
 
 Las rutas de `app.js`/`index.html` son relativas (`./data/...`), así que funciona
 también en un repo con nombre de proyecto o en un dominio propio.
+
+## Monitor diario de fuentes
+
+`scripts/monitor.py` (solo librería estándar) corre cada día a las 06:00 UTC en
+GitHub Actions (`update-data.yml`) y hace tres cosas:
+
+1. **Health check** de las 35 URLs únicas del catálogo (builds, índice de armas, fuentes).
+2. **Revalida los 424 códigos**: comprueba si el código sigue publicado en su fuente
+   (`presente` / `ausente` / `sin verificar`). Resultado en `data/monitor.json`,
+   visible en la pestaña *Fuentes* y como badge en cada build.
+3. **Busca códigos nuevos** en las guías (abibuilder, Steam, RSS de Reddit):
+   candidatos con formato válido que no están en el catálogo → aviso en la web,
+   sin autoinsertarlos.
+
+Detalles prácticos:
+
+- Reddit solo responde por `.rss` (el `.json` da 403) y se limita a 1 petición/10 s.
+- `arenabreakout-infinite.com/weapons/` usa un checkpoint de Vercel que alterna
+  200/429: se registra como *bloqueada* cuando pasa, sin romper el job.
+- El job siempre commitea `data/monitor.json` (con la fecha de la comprobación);
+  el push a `main` reconstruye Pages solo.
+
+Ejecutar en local:
+
+```bash
+python3 scripts/monitor.py
+```
 
 ## Paso pendiente: Supabase
 

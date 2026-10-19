@@ -4,6 +4,3 @@ __pycache__/
 .venv/
 venv/
 node_modules/
-
-# requiere token con scope workflow (gh auth refresh -s workflow)
-.github/workflows/

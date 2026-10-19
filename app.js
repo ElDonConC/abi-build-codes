@@ -8,6 +8,7 @@
   const state = {
     tab: "builds",
     data: {},
+    monitor: null,
     f: {
       q: "", clase: "", nivel: "", orden: "arma",
       qArmas: "", claseArmas: "",
@@ -41,6 +42,21 @@
 
   const link = (url, label) =>
     url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label || url)}</a>` : "—";
+
+  const VERIF = {
+    presente: ["badge-ok", "verificado en su fuente"],
+    ausente: ["badge-ausente", "hoy no aparece en su fuente"],
+    fuente_bloqueada: ["badge-noverif", "fuente bloqueada"],
+    fuente_error: ["badge-noverif", "fuente caída"],
+  };
+
+  function verifBadge(buildId) {
+    const st = state.verif && state.verif[buildId];
+    if (!st || !VERIF[st.resultado]) return "";
+    const [cls, label] = VERIF[st.resultado];
+    const fecha = (st.checked_at || "").slice(0, 10);
+    return `<span class="badge ${cls}" title="Última comprobación: ${esc(fecha)}">${esc(label)}</span>`;
+  }
 
   const empty = (msg) => `<p class="empty">${esc(msg)}</p>`;
 
@@ -129,6 +145,7 @@
         <div>
           <span class="field-label">Código para copiar</span>
           ${codeBox(b.codigo)}
+          <div class="verif-line">${verifBadge(b.id)}</div>
           ${b.codigo_original && b.codigo_original !== b.codigo
             ? `<span class="field-label" style="margin-top:8px">Código original publicado</span><span class="field-value"><code>${esc(b.codigo_original)}</code></span>` : ""}
         </div>
@@ -272,7 +289,36 @@
       </article>`).join("") : empty("Ningún código coincide con la búsqueda.");
   }
 
+  function monitorCard() {
+    const m = state.monitor;
+    if (!m) return "";
+    const r = m.resumen || {};
+    const cands = m.candidatos || [];
+    return `
+    <div class="monitor">
+      <h3>Estado de la comprobación automática</h3>
+      <p class="when">Última comprobación: ${esc((m.updated_at || "").replace("T", " ").replace("+00:00", " UTC"))} · un job diario en GitHub Actions revisa las fuentes y revalida los códigos</p>
+      <div class="chips">
+        <span class="chip ok">Fuentes OK <b>${r.fuentes_ok ?? "—"}/${r.fuentes_total ?? "—"}</b></span>
+        <span class="chip warn">Bloqueadas <b>${r.fuentes_bloqueadas ?? 0}</b></span>
+        <span class="chip bad">Con error <b>${r.fuentes_error ?? 0}</b></span>
+        <span class="chip ok">Códigos presentes <b>${r.codigos_presentes ?? 0}</b></span>
+        <span class="chip warn">Hoy no aparecen <b>${r.codigos_ausentes ?? 0}</b></span>
+        <span class="chip">Sin verificar <b>${r.codigos_no_comprobables ?? 0}</b></span>
+      </div>
+      ${cands.length ? `
+      <details>
+        <summary>${cands.length} códigos candidatos nuevos detectados en las guías (revisar)</summary>
+        <div class="cand-grid">
+          ${cands.map((c) => `<div class="cand"><code>${esc(c.codigo)}</code><a href="${esc(c.fuente)}" target="_blank" rel="noopener">${esc(c.fuente)}</a></div>`).join("")}
+        </div>
+        <p class="when">No se añaden automáticamente: revisa cada código en el cliente antes de incorporarlo al catálogo.</p>
+      </details>` : ""}
+    </div>`;
+  }
+
   function renderFuentes() {
+    $("#monitor-resumen").innerHTML = monitorCard();
     $("#list-fuentes").innerHTML = state.data.fuentes.map((f) => `
       <article class="card">
         <div class="src-head">
@@ -384,6 +430,17 @@
     $("#stat-builds").textContent = nf.format(state.data.builds.length);
     $("#stat-armas").textContent = nf.format(state.data.armas.length);
     $("#stat-sin").textContent = nf.format(state.data.sin_build.length);
+
+    state.monitor = await fetch("./data/monitor.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null);
+    if (state.monitor && Array.isArray(state.monitor.codigos)) {
+      state.verif = {};
+      for (const c of state.monitor.codigos) state.verif[c.build_id] = c;
+      $("#stat-verif").textContent = `${state.monitor.resumen?.codigos_presentes ?? 0}/${state.data.builds.length}`;
+    } else {
+      $("#stat-verif").textContent = "—";
+    }
 
     fillSelect($("#f-clase"), uniq(state.data.builds.map((b) => b.clase)), "Todas las clases");
     fillSelect($("#f-nivel"), uniq(state.data.builds.map((b) => b.nivel)), "Todos los niveles");
