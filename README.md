@@ -13,6 +13,7 @@ app.js            buscador, filtros, orden, copiado de códigos, panel de verifi
 data/*.json       datos volcados desde el xlsx + monitor.json (aquí se engancha Supabase)
 scripts/extract.py extrae el xlsx → data/*.json
 scripts/monitor.py comprueba fuentes, revalida códigos y detecta candidatos nuevos
+discord_bot/       bot de Discord (/arma con autocompletado y menú por clase); ver su README
 .github/workflows/update-data.yml  job diario que ejecuta monitor.py y publica
 ```
 
@@ -77,6 +78,17 @@ Ejecutar en local:
 ```bash
 python3 scripts/monitor.py
 ```
+
+Si configuras el secret `DISCORD_WEBHOOK` en el repo, el job avisa en Discord
+cada vez que hay cambios (códigos caídos, candidatos nuevos).
+
+## Bot de Discord
+
+`discord_bot/` contiene un bot (discord.py) con `/arma` (autocompletado de las
+94 armas) y `/catalogo` (menú por clase → arma) que responde con embeds
+completos: etiqueta, nivel, precio, código y estado de verificación.
+Se despliega en tu propio servidor con Docker; instrucciones en
+[discord_bot/README.md](discord_bot/README.md).
 
 ## Paso pendiente: Supabase
 

@@ -1,0 +1,6 @@
+services:
+  abi-bot:
+    build: .
+    container_name: abi-bot
+    env_file: .env
+    restart: unless-stopped

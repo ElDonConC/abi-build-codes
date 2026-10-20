@@ -38,3 +38,35 @@ jobs:
           fi
           git commit -m "monitor: comprobación de fuentes $(date -u +%F)"
           git push
+
+      - name: Avisar por Discord (opcional)
+        if: steps.monitor.outputs.changed == 'true'
+        env:
+          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "$WEBHOOK_URL" ]; then
+            echo "Secret DISCORD_WEBHOOK no configurado; se omite el aviso"
+            exit 0
+          fi
+          python3 - <<'PY'
+          import json, os, urllib.request
+          m = json.load(open("data/monitor.json"))
+          r = m["resumen"]
+          lineas = [
+              f"📡 **Monitor ABI** — {m['updated_at'][:10]}",
+              (f"Fuentes OK {r['fuentes_ok']}/{r['fuentes_total']} · "
+               f"códigos presentes **{r['codigos_presentes']}** · "
+               f"hoy no aparecen {r['codigos_ausentes']}"),
+          ]
+          if r.get("candidatos_nuevos"):
+              cands = ", ".join(f"`{c['codigo']}`" for c in m["candidatos"][:8])
+              lineas.append(f"🆕 {r['candidatos_nuevos']} códigos candidatos nuevos: {cands}")
+          lineas.append("https://eldonconc.github.io/abi-build-codes/#fuentes")
+          req = urllib.request.Request(
+              os.environ["WEBHOOK_URL"],
+              data=json.dumps({"content": "\n".join(lineas)}).encode(),
+              headers={"Content-Type": "application/json"},
+          )
+          urllib.request.urlopen(req, timeout=15)
+          print("Aviso enviado al canal")
+          PY
