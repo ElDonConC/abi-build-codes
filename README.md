@@ -58,13 +58,15 @@ también en un repo con nombre de proyecto o en un dominio propio.
 
 ## Monitor diario de fuentes
 
-`scripts/monitor.py` (solo librería estándar) corre cada día a las 06:00 UTC en
-GitHub Actions (`update-data.yml`) y hace tres cosas:
+`scripts/monitor.py` (solo librería estándar) corre cada día con un cron a las
+06:00 UTC en GitHub Actions (`update-data.yml`) — en la práctica la cola de
+Actions lo arranca sobre las 11:10–11:25 UTC (~08:10 local) — y hace tres cosas:
 
 1. **Health check** de las 35 URLs únicas del catálogo (builds, índice de armas, fuentes).
 2. **Revalida los 424 códigos**: comprueba si el código sigue publicado en su fuente
    (`presente` / `ausente` / `sin verificar`). Resultado en `data/monitor.json`,
-   visible en la pestaña *Fuentes* y como badge en cada build.
+   visible en la pestaña *Fuentes*, como badge en cada build y con la fecha en
+   el pie de página de todas las pestañas («Última actualización de los datos»).
 3. **Busca códigos nuevos** en las guías (abibuilder, Steam, RSS de Reddit):
    candidatos con formato válido que no están en el catálogo → aviso en la web,
    sin autoinsertarlos.

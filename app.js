@@ -941,6 +941,13 @@
     } else {
       $("#stat-verif").textContent = "—";
     }
+    if (state.monitor && state.monitor.updated_at) {
+      const fu = $("#footer-updated");
+      fu.textContent = "Última actualización de los datos: "
+        + state.monitor.updated_at.replace("T", " ").replace("+00:00", " UTC")
+        + " · job diario en GitHub Actions";
+      fu.hidden = false;
+    }
 
     fillSelect($("#f-clase"), uniq(state.data.builds.map((b) => b.clase)), "Todas las clases");
     fillSelect($("#f-nivel"), uniq(state.data.builds.map((b) => b.nivel)), "Todos los niveles");
