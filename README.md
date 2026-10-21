@@ -117,6 +117,8 @@ Se despliega en tu propio servidor con Docker; instrucciones en
   descargadas de la wiki de ABI con `scripts/download_imgs.py`; las 12
   pendientes muestran sus iniciales (aún no existen en la wiki). Cuando
   suban alguna, vuelve a ejecutar `python3 scripts/download_imgs.py`.
+  **Clic en la miniatura** y se ve la imagen en grande (✕ o clic fuera
+  para cerrar).
 
 Sin login, sin cuentas: cada jugador tiene lo suyo en su dispositivo.
 

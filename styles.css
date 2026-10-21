@@ -284,6 +284,23 @@ button.badge.tier-btn.is-on {
 .report-err { color: var(--red); font-size: .85rem; margin: 10px 0 0; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
 
+/* Imagen de arma en grande (clic en la miniatura) */
+.card-img { cursor: zoom-in; }
+#img-dialog {
+  background: var(--card); color: var(--text); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 24px 20px 16px;
+  width: min(720px, calc(100vw - 32px)); position: relative;
+}
+#img-dialog::backdrop { background: rgba(3, 7, 12, .72); }
+#img-dialog img { display: block; max-width: 100%; max-height: 62vh; margin: 0 auto; object-fit: contain; }
+.img-name { margin: 12px 0 0; text-align: center; font-weight: 700; }
+.img-close {
+  position: absolute; top: 8px; right: 10px; width: 32px; height: 32px;
+  border-radius: 999px; border: 1px solid var(--line); background: var(--bg-soft);
+  color: var(--muted); font: inherit; cursor: pointer;
+}
+.img-close:hover { color: var(--text); border-color: var(--accent); }
+
 /* Panel admin */
 .admin-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .admin-bar .count { margin: 0; }

@@ -201,6 +201,21 @@
     reportBuild = null;
   }
 
+  function openImg(imgEl) {
+    $("#img-big").src = imgEl.src;
+    $("#img-big").alt = imgEl.alt;
+    $("#img-name").textContent = imgEl.alt;
+    const dlg = $("#img-dialog");
+    if (typeof dlg.showModal === "function") dlg.showModal();
+    else dlg.open = true;
+  }
+
+  function closeImg() {
+    const dlg = $("#img-dialog");
+    if (typeof dlg.close === "function") dlg.close();
+    else dlg.open = false;
+  }
+
   async function submitReport() {
     const errEl = $("#report-err");
     errEl.hidden = true;
@@ -844,6 +859,9 @@
         return;
       }
 
+      const imgEl = e.target.closest("img.card-img");
+      if (imgEl && !imgEl.hidden) { openImg(imgEl); return; }
+
       const repBtn = e.target.closest(".btn-report");
       if (repBtn) {
         const b = state.data.builds.find((x) => x.id === Number(repBtn.dataset.report));
@@ -852,6 +870,8 @@
     });
 
     $("#report-cancel").addEventListener("click", closeReport);
+    $("#img-close").addEventListener("click", closeImg);
+    $("#img-dialog").addEventListener("click", (e) => { if (e.target.id === "img-dialog") closeImg(); });
     $("#report-form").addEventListener("submit", (e) => {
       e.preventDefault();
       submitReport();
