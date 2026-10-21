@@ -66,7 +66,7 @@ Actions lo arranca sobre las 11:10–11:25 UTC (~08:10 local) — y hace tres co
 2. **Revalida los 424 códigos**: comprueba si el código sigue publicado en su fuente
    (`presente` / `ausente` / `sin verificar`). Resultado en `data/monitor.json`,
    visible en la pestaña *Fuentes*, como badge en cada build y con la fecha en
-   el pie de página de todas las pestañas («Última actualización de los datos»).
+   la cabecera de todas las pestañas («🕒 Última actualización de los datos»).
 3. **Busca códigos nuevos** en las guías (abibuilder, Steam, RSS de Reddit):
    candidatos con formato válido que no están en el catálogo → aviso en la web,
    sin autoinsertarlos.

@@ -47,6 +47,8 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fo
 }
 h1 { margin: 0; font-size: clamp(1.15rem, 3vw, 1.5rem); }
 .tagline { margin: 2px 0 0; color: var(--muted); font-size: .9rem; }
+.updated-at { margin: 3px 0 0; color: var(--muted); font-size: .75rem; }
+.updated-at:not([hidden])::before { content: "🕒 "; }
 
 .stats { display: flex; gap: 10px; margin: 18px 0 0; flex-wrap: wrap; }
 .stats > div {
