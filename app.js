@@ -9,6 +9,7 @@
     tab: "builds",
     data: {},
     monitor: null,
+    tierOpen: null,
     f: {
       q: "", clase: "", nivel: "", orden: "arma", arma: "",
       qArmas: "", claseArmas: "", ratingArmas: "",
@@ -338,7 +339,38 @@
     </article>`;
   }
 
+  // Panel desplegado bajo la tarjeta con las builds de esa arma y categoría
+  function tierPanel(a) {
+    if (!state.tierOpen || state.tierOpen.arma !== a.arma) return "";
+    const tier = state.tierOpen.tier;
+    const rows = sortBuilds(
+      state.data.builds.filter((b) => b.arma === a.arma && nivelOk(b.nivel, tier)),
+      "precio_asc");
+    const badgeCls = { Barata: "badge-barata", Media: "badge-media", Premium: "badge-premium" }[tier] || "badge-sinprecio";
+    return `
+      <div class="tier-panel is-open" data-tier-panel="${esc(a.arma)}">
+        <div class="tier-panel-head">
+          <span class="badge ${badgeCls}">${esc(tier)}</span>
+          <b>${rows.length} build${rows.length === 1 ? "" : "s"} de ${esc(a.arma)}</b>
+          <span class="tier-hint">de menor a mayor precio</span>
+        </div>
+        ${rows.map((b) => `
+          <div class="tier-row">
+            <div class="tier-row-meta">
+              ${levelBadge(b.nivel)}
+              ${b.etiqueta ? `<span class="tier-etiqueta">${esc(b.etiqueta)}</span>` : ""}
+              <span class="price ${(b.precio_ref ?? b.precio_min) == null ? "none" : ""}">${(b.precio_ref ?? b.precio_min) == null ? "Sin precio" : money(b.precio_ref ?? b.precio_min)}</span>
+              ${verifBadge(b.id)}
+            </div>
+            ${codeBox(b.codigo)}
+          </div>`).join("") || `<p class="empty">Ahora mismo no hay builds ${esc(tier.toLowerCase())} publicadas para esta arma.</p>`}
+        <button class="tier-all" type="button" data-tier="${esc(tier)}" data-arma="${esc(a.arma)}"
+          title="Ver este filtro en la pestaña Builds">Ver todas en Builds →</button>
+      </div>`;
+  }
+
   function weaponCard(a, pos = null) {
+    const abierto = (t) => state.tierOpen && state.tierOpen.arma === a.arma && state.tierOpen.tier === t;
     return `
       <article class="card">
         <div class="card-top">
@@ -346,12 +378,13 @@
           <h3 class="card-title">${esc(a.arma)}</h3>
           <div class="card-meta">
             <span class="badge badge-clase">${esc(a.clase)}</span>
-            ${a.hay_barata === "Sí" ? `<button class="badge badge-barata tier-btn" type="button" data-tier="Barata" data-arma="${esc(a.arma)}" title="Ver las builds baratas de ${esc(a.arma)}">Barata</button>` : ""}
-            ${a.hay_media === "Sí" ? `<button class="badge badge-media tier-btn" type="button" data-tier="Media" data-arma="${esc(a.arma)}" title="Ver las builds de gama media de ${esc(a.arma)}">Media</button>` : ""}
-            ${a.hay_premium === "Sí" ? `<button class="badge badge-premium tier-btn" type="button" data-tier="Premium" data-arma="${esc(a.arma)}" title="Ver las builds premium de ${esc(a.arma)}">Premium</button>` : ""}
+            ${a.hay_barata === "Sí" ? `<button class="badge badge-barata tier-btn${abierto("Barata") ? " is-on" : ""}" type="button" data-tier="Barata" data-arma="${esc(a.arma)}" aria-expanded="${abierto("Barata")}" title="Ver las builds baratas de ${esc(a.arma)} aquí mismo">Barata</button>` : ""}
+            ${a.hay_media === "Sí" ? `<button class="badge badge-media tier-btn${abierto("Media") ? " is-on" : ""}" type="button" data-tier="Media" data-arma="${esc(a.arma)}" aria-expanded="${abierto("Media")}" title="Ver las builds de gama media de ${esc(a.arma)} aquí mismo">Media</button>` : ""}
+            ${a.hay_premium === "Sí" ? `<button class="badge badge-premium tier-btn${abierto("Premium") ? " is-on" : ""}" type="button" data-tier="Premium" data-arma="${esc(a.arma)}" aria-expanded="${abierto("Premium")}" title="Ver las builds premium de ${esc(a.arma)} aquí mismo">Premium</button>` : ""}
             ${rateWidget(a.arma)}
           </div>
         </div>
+        ${tierPanel(a)}
         <div class="card-grid">
           <div>
             <span class="field-label">Builds / códigos únicos</span>
@@ -762,11 +795,22 @@
 
       const tierBtn = e.target.closest(".tier-btn");
       if (tierBtn) {
-        state.f.arma = tierBtn.dataset.arma;
-        state.f.nivel = tierBtn.dataset.tier;
+        const arma = tierBtn.dataset.arma, tier = tierBtn.dataset.tier;
+        const yaAbierto = state.tierOpen && state.tierOpen.arma === arma && state.tierOpen.tier === tier;
+        state.tierOpen = yaAbierto ? null : { arma, tier };
+        RENDER[state.tab]();
+        if (!yaAbierto) toast(`Builds de ${arma} · ${tier}`);
+        return;
+      }
+
+      const tierAll = e.target.closest(".tier-all");
+      if (tierAll) {
+        state.f.arma = tierAll.dataset.arma;
+        state.f.nivel = tierAll.dataset.tier;
         state.f.clase = "";
         state.f.q = "";
         state.f.orden = "precio_asc";
+        state.tierOpen = null;
         $("#q").value = "";
         $("#f-clase").value = "";
         $("#f-nivel").value = state.f.nivel;

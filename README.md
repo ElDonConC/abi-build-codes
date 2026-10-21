@@ -107,8 +107,10 @@ Se despliega en tu propio servidor con Docker; instrucciones en
   después las que más builds tienen publicadas; cada tarjeta muestra su puesto
   (#1, #2…). En el Índice puedes filtrar por valoración (con la mía, ★4+, ★5).
 - Las badges **Barata / Media / Premium** de cada arma son botones: al pulsarlas
-  saltas a la pestaña Builds con esa arma (chip verde "Arma: …" ✕) y ese nivel,
-  ordenadas por precio de menor a mayor.
+  se despliega **en la propia tarjeta** un panel con las builds de esa arma y
+  categoría (nivel, etiqueta, precio y código con su botón Copiar), ordenadas
+  de menor a mayor. Dentro del panel hay un enlace *"Ver todas en Builds →"*
+  para filtrar la pestaña Builds por esa arma (chip verde «Arma: … ✕»).
 
 Sin login, sin cuentas: cada jugador tiene lo suyo en su dispositivo.
 
