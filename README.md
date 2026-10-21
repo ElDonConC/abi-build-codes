@@ -99,8 +99,10 @@ Se despliega en tu propio servidor con Docker; instrucciones en
 - El **corazón ♥** de cada build guarda esa configuración en el `localStorage`
   del navegador (clave `abi_favoritos_v1`); la pestaña **♥ Favoritos** las lista
   con búsqueda y orden, y su contador aparece en la propia pestaña.
-- Las **estrellas ★** de cada arma (Índice y Top) guardan tu valoración personal
-  1–5 (clave `abi_rating_armas_v1`); vuelve a pulsar la misma estrella para quitarla.
+- Las **estrellas ★** de cada arma están en **todas las pestañas** (Builds,
+  Favoritos, Top, Índice, Sin build, Lista): valoran el arma de esa tarjeta
+  1–5, sin login (clave `abi_rating_armas_v1`); vuelve a pulsar la misma
+  estrella para quitarla. Puntúas en una pestaña y el resto se queda sincronizada.
 - La pestaña **Top armas** ordena las 94 armas: primero tus valoradas (desc),
   después las que más builds tienen publicadas; cada tarjeta muestra su puesto
   (#1, #2…). En el Índice puedes filtrar por valoración (con la mía, ★4+, ★5).

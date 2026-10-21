@@ -295,6 +295,7 @@
           <span class="badge badge-clase">${esc(b.clase)}</span>
           ${levelBadge(b.nivel)}
           ${b.etiqueta ? `<span>${esc(b.etiqueta)}</span>` : ""}
+          ${rateWidget(b.arma)}
         </div>
       </div>
       <div class="card-grid">
@@ -421,7 +422,7 @@
       <article class="card">
         <div class="card-top">
           <h3 class="card-title">${esc(a.arma)}</h3>
-          <div class="card-meta"><span class="badge badge-clase">${esc(a.clase)}</span><span>${esc(a.resultado || "")}</span></div>
+          <div class="card-meta"><span class="badge badge-clase">${esc(a.clase)}</span><span>${esc(a.resultado || "")}</span>${rateWidget(a.arma)}</div>
         </div>
         <div class="card-grid">
           <div>
@@ -458,6 +459,7 @@
             <span class="badge badge-clase">${esc(l.clase)}</span>
             ${l.etiqueta ? `<span>${esc(l.etiqueta)}</span>` : ""}
             ${l.precio != null ? `<span class="price">${money(l.precio)}</span>` : levelBadge(l.nivel)}
+            ${rateWidget(l.arma)}
           </div>
         </div>
         <div class="card-grid">
