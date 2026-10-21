@@ -202,12 +202,17 @@
   }
 
   function openImg(imgEl) {
+    const y = window.scrollY || 0;
     $("#img-big").src = imgEl.src;
     $("#img-big").alt = imgEl.alt;
     $("#img-name").textContent = imgEl.alt;
     const dlg = $("#img-dialog");
     if (typeof dlg.showModal === "function") dlg.showModal();
     else dlg.open = true;
+    // el navegador no debe arrastrar la página al abrir el diálogo
+    requestAnimationFrame(() => {
+      if ((window.scrollY || 0) !== y && window.scrollTo) window.scrollTo(0, y);
+    });
   }
 
   function closeImg() {
