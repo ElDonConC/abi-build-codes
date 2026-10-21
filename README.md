@@ -106,6 +106,9 @@ Se despliega en tu propio servidor con Docker; instrucciones en
 - La pestaña **Top armas** ordena las 94 armas: primero tus valoradas (desc),
   después las que más builds tienen publicadas; cada tarjeta muestra su puesto
   (#1, #2…). En el Índice puedes filtrar por valoración (con la mía, ★4+, ★5).
+- Las badges **Barata / Media / Premium** de cada arma son botones: al pulsarlas
+  saltas a la pestaña Builds con esa arma (chip verde "Arma: …" ✕) y ese nivel,
+  ordenadas por precio de menor a mayor.
 
 Sin login, sin cuentas: cada jugador tiene lo suyo en su dispositivo.
 

@@ -10,7 +10,7 @@
     data: {},
     monitor: null,
     f: {
-      q: "", clase: "", nivel: "", orden: "arma",
+      q: "", clase: "", nivel: "", orden: "arma", arma: "",
       qArmas: "", claseArmas: "", ratingArmas: "",
       qLista: "", claseLista: "",
       qFav: "", ordenFav: "arma",
@@ -237,12 +237,17 @@
     const nq = norm(f.q);
     return base.filter((b) => {
       if (f.clase && b.clase !== f.clase) return false;
-      if (f.nivel && b.nivel !== f.nivel) return false;
+      if (f.arma && b.arma !== f.arma) return false;
+      if (f.nivel && !nivelOk(b.nivel, f.nivel)) return false;
       if (!nq) return true;
       return norm([b.arma, b.clase, b.nivel, b.etiqueta, b.codigo, b.codigo_original, b.fuente, b.fecha, b.notas]
         .join(" ")).includes(nq);
     });
   }
+
+  // "Barata" incluye "Barata (sin precio)" (coincide con las badges hay_barata)
+  const nivelOk = (nivel, filtro) =>
+    filtro === "Barata" ? String(nivel || "").startsWith("Barata") : nivel === filtro;
 
   function sortBuilds(rows, orden) {
     rows.sort((a, b) => {
@@ -265,6 +270,9 @@
 
   function renderBuilds() {
     const rows = sortBuilds(filteredBuilds(state.f, state.data.builds), state.f.orden);
+    const chip = $("#f-arma-chip");
+    chip.hidden = !state.f.arma;
+    chip.innerHTML = state.f.arma ? `Arma: ${esc(state.f.arma)} <span aria-hidden="true">✕</span>` : "";
     $("#count-builds").textContent = `${rows.length} de ${state.data.builds.length} configuraciones`;
     $("#list-builds").innerHTML = rows.length ? rows.map(buildCard).join("") : empty("Ninguna build coincide con la búsqueda.");
   }
@@ -338,9 +346,9 @@
           <h3 class="card-title">${esc(a.arma)}</h3>
           <div class="card-meta">
             <span class="badge badge-clase">${esc(a.clase)}</span>
-            ${a.hay_barata === "Sí" ? '<span class="badge badge-barata">Barata</span>' : ""}
-            ${a.hay_media === "Sí" ? '<span class="badge badge-media">Media</span>' : ""}
-            ${a.hay_premium === "Sí" ? '<span class="badge badge-premium">Premium</span>' : ""}
+            ${a.hay_barata === "Sí" ? `<button class="badge badge-barata tier-btn" type="button" data-tier="Barata" data-arma="${esc(a.arma)}" title="Ver las builds baratas de ${esc(a.arma)}">Barata</button>` : ""}
+            ${a.hay_media === "Sí" ? `<button class="badge badge-media tier-btn" type="button" data-tier="Media" data-arma="${esc(a.arma)}" title="Ver las builds de gama media de ${esc(a.arma)}">Media</button>` : ""}
+            ${a.hay_premium === "Sí" ? `<button class="badge badge-premium tier-btn" type="button" data-tier="Premium" data-arma="${esc(a.arma)}" title="Ver las builds premium de ${esc(a.arma)}">Premium</button>` : ""}
             ${rateWidget(a.arma)}
           </div>
         </div>
@@ -704,8 +712,13 @@
     on("#f-orden-top", "ordenTop");
 
     $("#q-clear").addEventListener("click", () => {
-      state.f.q = ""; state.f.clase = ""; state.f.nivel = ""; state.f.orden = "arma";
+      state.f.q = ""; state.f.clase = ""; state.f.nivel = ""; state.f.orden = "arma"; state.f.arma = "";
       $("#q").value = ""; $("#f-clase").value = ""; $("#f-nivel").value = ""; $("#f-orden").value = "arma";
+      renderBuilds();
+    });
+
+    $("#f-arma-chip").addEventListener("click", () => {
+      state.f.arma = "";
       renderBuilds();
     });
 
@@ -744,6 +757,22 @@
           btn.setAttribute("aria-pressed", String(on));
         });
         if (state.tab === "favoritos") renderFavoritos();
+        return;
+      }
+
+      const tierBtn = e.target.closest(".tier-btn");
+      if (tierBtn) {
+        state.f.arma = tierBtn.dataset.arma;
+        state.f.nivel = tierBtn.dataset.tier;
+        state.f.clase = "";
+        state.f.q = "";
+        state.f.orden = "precio_asc";
+        $("#q").value = "";
+        $("#f-clase").value = "";
+        $("#f-nivel").value = state.f.nivel;
+        $("#f-orden").value = "precio_asc";
+        setTab("builds");
+        toast(`Builds de ${state.f.arma} · ${state.f.nivel}`);
         return;
       }
 
