@@ -28,6 +28,7 @@
 
 <nav class="tabs wrap" id="tabs" role="tablist">
   <button class="tab is-active" data-tab="builds" role="tab" aria-selected="true">Builds</button>
+  <button class="tab" data-tab="favoritos" role="tab" aria-selected="false">★ Favoritos <span class="tab-badge" id="fav-badge" hidden>0</span></button>
   <button class="tab" data-tab="armas" role="tab" aria-selected="false">Índice de armas</button>
   <button class="tab" data-tab="sin_build" role="tab" aria-selected="false">Sin build</button>
   <button class="tab" data-tab="lista" role="tab" aria-selected="false">Lista compartida</button>
@@ -54,6 +55,22 @@
     </div>
     <p class="count" id="count-builds"></p>
     <div class="list" id="list-builds"></div>
+  </section>
+
+  <!-- FAVORITOS -->
+  <section id="panel-favoritos" class="panel" role="tabpanel" hidden>
+    <div class="controls">
+      <input type="search" id="q-fav" placeholder="Buscar en tus favoritos…" aria-label="Buscar en favoritos" autocomplete="off">
+      <select id="f-orden-fav" aria-label="Ordenar favoritos">
+        <option value="arma">Orden: arma (A–Z)</option>
+        <option value="precio_asc">Precio: menor a mayor</option>
+        <option value="precio_desc">Precio: mayor a menor</option>
+        <option value="nivel">Nivel económico</option>
+      </select>
+      <button id="q-clear-fav" class="btn-ghost" type="button">Limpiar</button>
+    </div>
+    <p class="count" id="count-fav"></p>
+    <div class="list" id="list-fav"></div>
   </section>
 
   <!-- ARMAS -->
@@ -92,17 +109,48 @@
   <section id="panel-leeme" class="panel" role="tabpanel" hidden>
     <div class="list" id="list-leeme"></div>
   </section>
+
+  <!-- ADMIN: gestión de reportes (accesible en #reportes) -->
+  <section id="panel-reportes" class="panel" role="tabpanel" hidden>
+    <div id="admin-root"></div>
+  </section>
 </main>
+
+<dialog id="report-dialog" aria-labelledby="report-title">
+  <form id="report-form" method="dialog">
+    <h3 id="report-title">Reportar código</h3>
+    <p class="report-target" id="report-target"></p>
+    <label class="field-label" for="r-motivo">¿Qué ocurre?</label>
+    <select id="r-motivo" name="motivo" required>
+      <option value="no_funciona">No funciona / el juego lo rechaza</option>
+      <option value="arma_incorrecta">Es de otra arma</option>
+      <option value="precio_desactualizado">El precio ya no es ese</option>
+      <option value="otro">Otro motivo</option>
+    </select>
+    <label class="field-label" for="r-comentario" style="margin-top:12px">Detalles <span class="muted">(opcional)</span></label>
+    <textarea id="r-comentario" name="comentario" rows="3" maxlength="500"
+      placeholder="Qué pasó exactamente, en qué patch, etc."></textarea>
+    <label class="field-label" for="r-contacto" style="margin-top:12px">Tu contacto <span class="muted">(opcional: Discord o email para avisarte)</span></label>
+    <input type="text" id="r-contacto" name="contacto" maxlength="120" autocomplete="off">
+    <input type="text" name="empresa" id="r-hp" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+    <p class="report-err" id="report-err" hidden></p>
+    <div class="report-actions">
+      <button type="button" class="btn-ghost" id="report-cancel">Cancelar</button>
+      <button type="submit" class="btn-primary" id="report-send">Enviar reporte</button>
+    </div>
+  </form>
+</dialog>
 
 <footer class="site-footer">
   <div class="wrap">
     <p>Datos derivados de <code>Catalogo_ABI_CORREGIDO_compatible.xlsx</code>. Los códigos pertenecen a sus fuentes originales.</p>
-    <p class="muted">Proyecto no oficial, sin relación con Morefun Studios ni Level Infinite.</p>
+    <p class="muted">Proyecto no oficial, sin relación con Morefun Studios ni Level Infinite. · <a href="#reportes">Gestión de reportes</a></p>
   </div>
 </footer>
 
 <div id="toast" role="status" aria-live="polite"></div>
 
+<script src="./config.js"></script>
 <script src="./app.js"></script>
 </body>
 </html>

@@ -7,12 +7,14 @@ Web estática (HTML/CSS/JS puro) con el catálogo completo del xlsx
 ## Estructura
 
 ```
-index.html        interfaz (pestañas: Builds, Índice, Sin build, Lista, Fuentes, Acerca de)
+index.html        interfaz (pestañas: Builds, Favoritos, Índice, Sin build, Lista, Fuentes, Acerca de)
 styles.css        estilos (tema oscuro, responsive)
-app.js            buscador, filtros, orden, copiado de códigos, panel de verificación
-data/*.json       datos volcados desde el xlsx + monitor.json (aquí se engancha Supabase)
+app.js            buscador, filtros, orden, copiado, favoritos (localStorage), reportes y panel admin
+config.js         credenciales públicas de Supabase (URL + publishable key) para los reportes
+data/*.json       datos volcados desde el xlsx + monitor.json
 scripts/extract.py extrae el xlsx → data/*.json
 scripts/monitor.py comprueba fuentes, revalida códigos y detecta candidatos nuevos
+docs/supabase.sql SQL para crear la tabla de reportes y sus políticas RLS
 discord_bot/       bot de Discord (/arma con autocompletado y menú por clase); ver su README
 .github/workflows/update-data.yml  job diario que ejecuta monitor.py y publica
 ```
@@ -90,9 +92,36 @@ completos: etiqueta, nivel, precio, código y estado de verificación.
 Se despliega en tu propio servidor con Docker; instrucciones en
 [discord_bot/README.md](discord_bot/README.md).
 
-## Paso pendiente: Supabase
+## Reportes de la comunidad y favoritos
 
-`data/*.json` ya sale con esquema plano y `id` por tabla, pensado para volcarse
-tal cual a Supabase (tablas `builds`, `armas`, `sin_build`, `lista`, `fuentes`,
-`leeme`). Pendiente: crear el proyecto, el SQL de tablas y un script de import
-(`scripts/import_supabase.py` con `supabase-py` o `pg` COPY desde JSON).
+### Favoritos (sin backend)
+
+La estrella **★** de cada build guarda esa configuración en el `localStorage`
+del navegador (clave `abi_favoritos_v1`); la pestaña **Favoritos** las lista con
+búsqueda y orden, y su contador aparece en la propia pestaña. Sin login, sin
+cuentas: cada jugador tiene los suyos en su dispositivo.
+
+### Reportes ("este código no funciona") → Supabase
+
+Cada build tiene un botón **Reportar** que abre un formulario (motivo, detalle y
+contacto opcionales) y lo inserta en la tabla `reportes` de Supabase por REST,
+con la publishable key de `config.js`. La tabla está protegida con RLS:
+cualquiera puede **insertar**, solo tu cuenta de admin puede **leer/editar/borrar**.
+
+Configuración (una sola vez):
+
+1. [supabase.com](https://supabase.com) → *New project* → copiar **Project URL**
+   y **publishable key**.
+2. SQL Editor → pegar y ejecutar [`docs/supabase.sql`](docs/supabase.sql).
+3. Rellenar `config.js` con la URL y la clave (ya commiteado; la clave es
+   pública por diseño: la barrera real es RLS).
+4. *Authentication → Users → Invite user* con el email del admin (será quien
+   entre en el panel de gestión).
+
+Gestión: enlace **Gestión de reportes** en el pie del sitio (o la URL `#reportes`)
+→ login con el email de admin → listado con badge *sin revisar*, cambio de estado
+(`nuevo → en revisión → resuelto/rechazado`) y borrado. La sesión dura lo que
+dure el token de Supabase; al caducar vuelve a pedir login.
+
+Nota: el catálogo completo (`data/*.json`) **no** se copia a Supabase: vive en
+GitHub y se sirve desde Pages; Supabase solo gestiona los reportes.
