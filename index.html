@@ -28,7 +28,8 @@
 
 <nav class="tabs wrap" id="tabs" role="tablist">
   <button class="tab is-active" data-tab="builds" role="tab" aria-selected="true">Builds</button>
-  <button class="tab" data-tab="favoritos" role="tab" aria-selected="false">★ Favoritos <span class="tab-badge" id="fav-badge" hidden>0</span></button>
+  <button class="tab" data-tab="favoritos" role="tab" aria-selected="false">♥ Favoritos <span class="tab-badge" id="fav-badge" hidden>0</span></button>
+  <button class="tab" data-tab="top" role="tab" aria-selected="false">Top armas</button>
   <button class="tab" data-tab="armas" role="tab" aria-selected="false">Índice de armas</button>
   <button class="tab" data-tab="sin_build" role="tab" aria-selected="false">Sin build</button>
   <button class="tab" data-tab="lista" role="tab" aria-selected="false">Lista compartida</button>
@@ -73,11 +74,32 @@
     <div class="list" id="list-fav"></div>
   </section>
 
+  <!-- TOP ARMAS -->
+  <section id="panel-top" class="panel" role="tabpanel" hidden>
+    <div class="controls">
+      <input type="search" id="q-top" placeholder="Buscar en el ranking…" aria-label="Buscar en el ranking" autocomplete="off">
+      <select id="f-clase-top" aria-label="Filtrar por clase"><option value="">Todas las clases</option></select>
+      <select id="f-orden-top" aria-label="Ordenar el ranking">
+        <option value="top">Orden: mi valoración ★</option>
+        <option value="builds">Más builds publicadas</option>
+        <option value="arma">Alfabético (A–Z)</option>
+      </select>
+    </div>
+    <p class="count" id="count-top"></p>
+    <div class="list" id="list-top"></div>
+  </section>
+
   <!-- ARMAS -->
   <section id="panel-armas" class="panel" role="tabpanel" hidden>
     <div class="controls">
       <input type="search" id="q-armas" placeholder="Buscar arma, clase, estado…" aria-label="Buscar armas" autocomplete="off">
       <select id="f-clase-armas" aria-label="Filtrar por clase"><option value="">Todas las clases</option></select>
+      <select id="f-rating" aria-label="Filtrar por valoración">
+        <option value="">Todas las valoraciones</option>
+        <option value="rated">Con mi valoración</option>
+        <option value="4">★ 4 o más</option>
+        <option value="5">★★★★★ solo las 5</option>
+      </select>
     </div>
     <p class="count" id="count-armas"></p>
     <div class="list" id="list-armas"></div>

@@ -11,9 +11,10 @@
     monitor: null,
     f: {
       q: "", clase: "", nivel: "", orden: "arma",
-      qArmas: "", claseArmas: "",
+      qArmas: "", claseArmas: "", ratingArmas: "",
       qLista: "", claseLista: "",
       qFav: "", ordenFav: "arma",
+      qTop: "", claseTop: "", ordenTop: "top",
     },
   };
 
@@ -34,6 +35,29 @@
     if (!el) return;
     el.hidden = favs.size === 0;
     el.textContent = String(favs.size);
+  }
+
+  /* ---------- valoración de armas (localStorage) ---------- */
+
+  const RATE_KEY = "abi_rating_armas_v1";
+  let ratings = {};
+  try {
+    ratings = JSON.parse(localStorage.getItem(RATE_KEY)) || {};
+  } catch { /* empezamos sin valoraciones */ }
+
+  const saveRatings = () => {
+    try { localStorage.setItem(RATE_KEY, JSON.stringify(ratings)); } catch { /* modo privado */ }
+  };
+
+  const ratingDe = (arma) => Number(ratings[arma]) || 0;
+
+  function rateWidget(arma) {
+    const v = ratingDe(arma);
+    return `<span class="rate" data-arma="${esc(arma)}" role="group" aria-label="Valorar ${esc(arma)}"
+      title="${v ? `Tu valoración: ${v}/5` : "Sin valorar: pulsa una estrella"}">` +
+      [1, 2, 3, 4, 5].map((n) =>
+        `<button type="button" class="rate-star${n <= v ? " on" : ""}" data-v="${n}" aria-label="${n} de 5">★</button>`).join("") +
+      `</span>`;
   }
 
 
@@ -254,7 +278,7 @@
       ? rows.map(buildCard).join("")
       : empty(favs.size
           ? "Ningún favorito coincide con la búsqueda."
-          : "Aún no tienes favoritos: pulsa la estrella ★ en cualquier build de la pestaña Builds.");
+          : "Aún no tienes favoritos: pulsa el corazón ♥ en cualquier build de la pestaña Builds.");
   }
 
   function buildCard(b) {
@@ -265,7 +289,7 @@
     <article class="card">
       <div class="card-top">
         <button class="btn-fav${favs.has(b.id) ? " is-on" : ""}" type="button" data-fav="${b.id}"
-          aria-pressed="${favs.has(b.id)}" title="Guardar en favoritos" aria-label="Guardar en favoritos">${favs.has(b.id) ? "★" : "☆"}</button>
+          aria-pressed="${favs.has(b.id)}" title="Guardar en favoritos" aria-label="Guardar en favoritos">${favs.has(b.id) ? "♥" : "♡"}</button>
         <h3 class="card-title">${esc(b.arma)}</h3>
         <div class="card-meta">
           <span class="badge badge-clase">${esc(b.clase)}</span>
@@ -305,25 +329,18 @@
     </article>`;
   }
 
-  function renderArmas() {
-    const nq = norm(state.f.qArmas);
-    const clase = state.f.claseArmas;
-    const rows = state.data.armas.filter((a) => {
-      if (clase && a.clase !== clase) return false;
-      if (!nq) return true;
-      return norm([a.arma, a.clase, a.estado, a.cobertura, a.fuente_roster, a.notas].join(" ")).includes(nq);
-    }).sort((a, b) => a.arma.localeCompare(b.arma, "es"));
-
-    $("#count-armas").textContent = `${rows.length} de ${state.data.armas.length} armas en el índice`;
-    $("#list-armas").innerHTML = rows.length ? rows.map((a) => `
+  function weaponCard(a, pos = null) {
+    return `
       <article class="card">
         <div class="card-top">
+          ${pos ? `<span class="pos" title="Puesto en el ranking">#${pos}</span>` : ""}
           <h3 class="card-title">${esc(a.arma)}</h3>
           <div class="card-meta">
             <span class="badge badge-clase">${esc(a.clase)}</span>
             ${a.hay_barata === "Sí" ? '<span class="badge badge-barata">Barata</span>' : ""}
             ${a.hay_media === "Sí" ? '<span class="badge badge-media">Media</span>' : ""}
             ${a.hay_premium === "Sí" ? '<span class="badge badge-premium">Premium</span>' : ""}
+            ${rateWidget(a.arma)}
           </div>
         </div>
         <div class="card-grid">
@@ -349,7 +366,52 @@
           ${a.estado ? `<p class="field"><b>Estado:</b> ${esc(a.estado)}</p>` : ""}
           ${a.notas ? `<p class="field"><b>Notas:</b> ${esc(a.notas)}</p>` : ""}
         </details>` : ""}
-      </article>`).join("") : empty("Ningún arma coincide con la búsqueda.");
+      </article>`;
+  }
+
+  function filterArmas(base, q, clase, ratingMin) {
+    const nq = norm(q);
+    return base.filter((a) => {
+      if (clase && a.clase !== clase) return false;
+      if (ratingMin === "rated" && !ratingDe(a.arma)) return false;
+      if (ratingMin === "4" && ratingDe(a.arma) < 4) return false;
+      if (ratingMin === "5" && ratingDe(a.arma) < 5) return false;
+      if (!nq) return true;
+      return norm([a.arma, a.clase, a.estado, a.cobertura, a.fuente_roster, a.notas].join(" ")).includes(nq);
+    });
+  }
+
+  function renderArmas() {
+    const rows = filterArmas(state.data.armas, state.f.qArmas, state.f.claseArmas, state.f.ratingArmas)
+      .sort((a, b) => a.arma.localeCompare(b.arma, "es"));
+    const nRated = state.data.armas.filter((a) => ratingDe(a.arma)).length;
+    $("#count-armas").textContent =
+      `${rows.length} de ${state.data.armas.length} armas en el índice${nRated ? ` · ${nRated} valorad${nRated === 1 ? "a" : "as"} por ti` : ""}`;
+    $("#list-armas").innerHTML = rows.length ? rows.map((a) => weaponCard(a)).join("") : empty("Ningún arma coincide con la búsqueda.");
+  }
+
+  function renderTop() {
+    const rows = filterArmas(state.data.armas, state.f.qTop, state.f.claseTop, "");
+    const orden = state.f.ordenTop;
+    rows.sort((a, b) => {
+      if (orden === "arma") return a.arma.localeCompare(b.arma, "es");
+      if (orden === "builds") {
+        const d = (b.n_builds ?? 0) - (a.n_builds ?? 0);
+        return d || a.arma.localeCompare(b.arma, "es");
+      }
+      const ra = ratingDe(a.arma), rb = ratingDe(b.arma);
+      if (ra !== rb) return rb - ra;
+      const d = (b.n_builds ?? 0) - (a.n_builds ?? 0);
+      return d || a.arma.localeCompare(b.arma, "es");
+    });
+    const nRated = rows.filter((a) => ratingDe(a.arma)).length;
+    const conPos = orden === "top" || orden === "builds";
+    $("#count-top").textContent = nRated
+      ? `${rows.length} armas · ${nRated} valorad${nRated === 1 ? "a" : "as"} por ti${orden === "top" ? " · tu ranking personal primero" : ""}`
+      : `${rows.length} armas · aún no has valorado ninguna: pulsa estrellas ★ en cualquier arma`;
+    $("#list-top").innerHTML = rows.length
+      ? rows.map((a, i) => weaponCard(a, conPos ? i + 1 : null)).join("")
+      : empty("Ningún arma coincide con la búsqueda.");
   }
 
   function renderSin() {
@@ -588,6 +650,7 @@
   const RENDER = {
     builds: renderBuilds,
     favoritos: renderFavoritos,
+    top: renderTop,
     armas: renderArmas,
     sin_build: renderSin,
     lista: renderLista,
@@ -629,10 +692,14 @@
     on("#f-orden", "orden");
     on("#q-armas", "qArmas");
     on("#f-clase-armas", "claseArmas");
+    on("#f-rating", "ratingArmas");
     on("#q-lista", "qLista");
     on("#f-clase-lista", "claseLista");
     on("#q-fav", "qFav");
     on("#f-orden-fav", "ordenFav");
+    on("#q-top", "qTop");
+    on("#f-clase-top", "claseTop");
+    on("#f-orden-top", "ordenTop");
 
     $("#q-clear").addEventListener("click", () => {
       state.f.q = ""; state.f.clase = ""; state.f.nivel = ""; state.f.orden = "arma";
@@ -665,16 +732,34 @@
       if (favBtn) {
         const id = Number(favBtn.dataset.fav);
         if (favs.has(id)) { favs.delete(id); toast("Quitado de favoritos"); }
-        else { favs.add(id); toast("Añadido a favoritos ★"); }
+        else { favs.add(id); toast("Añadido a favoritos ♥"); }
         saveFavs();
         updateFavBadge();
         document.querySelectorAll(`.btn-fav[data-fav="${id}"]`).forEach((btn) => {
           const on = favs.has(id);
           btn.classList.toggle("is-on", on);
-          btn.textContent = on ? "★" : "☆";
+          btn.textContent = on ? "♥" : "♡";
           btn.setAttribute("aria-pressed", String(on));
         });
         if (state.tab === "favoritos") renderFavoritos();
+        return;
+      }
+
+      const rateStar = e.target.closest(".rate-star");
+      if (rateStar) {
+        const wrap = rateStar.closest(".rate");
+        const arma = wrap.dataset.arma;
+        const v = Number(rateStar.dataset.v);
+        if (ratingDe(arma) === v) { delete ratings[arma]; toast("Valoración quitada"); }
+        else { ratings[arma] = v; toast(`${arma}: ${"★".repeat(v)} ${v}/5`); }
+        saveRatings();
+        const cur = ratingDe(arma);
+        document.querySelectorAll(`.rate[data-arma="${arma}"]`).forEach((w) => {
+          w.title = cur ? `Tu valoración: ${cur}/5` : "Sin valorar: pulsa una estrella";
+          w.querySelectorAll(".rate-star").forEach((s) => s.classList.toggle("on", Number(s.dataset.v) <= cur));
+        });
+        if (state.tab === "top") renderTop();
+        else if (state.tab === "armas") renderArmas();
         return;
       }
 
@@ -750,6 +835,7 @@
     fillSelect($("#f-nivel"), uniq(state.data.builds.map((b) => b.nivel)), "Todos los niveles");
     fillSelect($("#f-clase-armas"), uniq(state.data.armas.map((a) => a.clase)), "Todas las clases");
     fillSelect($("#f-clase-lista"), uniq(state.data.lista.map((l) => l.clase)), "Todas las clases");
+    fillSelect($("#f-clase-top"), uniq(state.data.armas.map((a) => a.clase)), "Todas las clases");
 
     bindEvents();
     updateFavBadge();

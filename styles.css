@@ -157,13 +157,35 @@ main { padding: 18px 0 40px; }
 .btn-copy:hover { filter: brightness(1.1); }
 .btn-copy.copied { background: var(--green); color: #06121c; }
 
-/* Favoritos */
+/* Favoritos (corazón) */
 .btn-fav {
   background: none; border: none; cursor: pointer; padding: 0 2px;
-  font-size: 1.15rem; line-height: 1; color: var(--muted); transition: color .12s, transform .12s;
+  font-size: 1.2rem; line-height: 1; color: var(--muted); transition: color .12s, transform .12s;
 }
-.btn-fav:hover { color: var(--accent-2); transform: scale(1.15); }
-.btn-fav.is-on { color: var(--accent-2); }
+.btn-fav:hover { color: var(--red); transform: scale(1.15); }
+.btn-fav.is-on { color: var(--red); }
+
+/* Valoración de armas (estrellas) */
+.rate { display: inline-flex; gap: 1px; margin-left: 2px; }
+.rate-star {
+  background: none; border: none; cursor: pointer; padding: 0 1px;
+  font-size: 1rem; line-height: 1; color: #3b4657; transition: color .1s;
+}
+.rate-star.on { color: var(--accent-2); }
+.rate:hover .rate-star { color: #6b7686; }
+.rate:hover .rate-star:hover,
+.rate:hover .rate-star:hover ~ .rate-star { color: var(--accent-2); }
+.rate:hover .rate-star:hover ~ .rate-star { color: #3b4657; }
+
+/* Puesto en ranking */
+.pos {
+  display: grid; place-items: center; flex: none;
+  min-width: 28px; height: 28px; padding: 0 6px;
+  border-radius: 999px; background: rgba(76, 194, 255, .12);
+  border: 1px solid rgba(76, 194, 255, .35);
+  color: var(--accent); font-size: .82rem; font-weight: 800;
+}
+.card-top .pos:has(+ .card-title) { margin-right: -4px; }
 
 /* Reportar */
 .card-actions { margin-top: 8px; }
