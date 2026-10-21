@@ -168,11 +168,12 @@ main { padding: 18px 0 40px; }
 /* Reportar */
 .card-actions { margin-top: 8px; }
 .btn-report {
-  background: none; border: none; cursor: pointer; padding: 0;
-  color: var(--muted); font: inherit; font-size: .8rem;
-  text-decoration: underline dotted;
+  background: rgba(248, 81, 73, .08); border: 1px solid rgba(248, 81, 73, .4);
+  border-radius: 999px; cursor: pointer; padding: 3px 12px;
+  color: var(--red); font: inherit; font-size: .78rem; font-weight: 600;
+  transition: background .12s, border-color .12s;
 }
-.btn-report:hover { color: var(--red); }
+.btn-report:hover { background: rgba(248, 81, 73, .2); border-color: var(--red); }
 
 /* Diálogo de reporte */
 #report-dialog {
