@@ -371,9 +371,15 @@
 
   function weaponCard(a, pos = null) {
     const abierto = (t) => state.tierOpen && state.tierOpen.arma === a.arma && state.tierOpen.tier === t;
+    const imgRel = state.data.img && state.data.img[a.arma];
+    const iniciales = (a.arma.replace(/[^A-Za-z0-9]/g, "").slice(0, 2) || "??").toUpperCase();
     return `
       <article class="card">
         <div class="card-top">
+          <span class="card-imgwrap"${imgRel ? "" : ' aria-hidden="true"'}>
+            ${imgRel ? `<img class="card-img" src="data/${esc(imgRel)}" alt="${esc(a.arma)}" loading="lazy" onerror="this.hidden=true">` : ""}
+            <span class="card-img-ph">${esc(iniciales)}</span>
+          </span>
           ${pos ? `<span class="pos" title="Puesto en el ranking">#${pos}</span>` : ""}
           <h3 class="card-title">${esc(a.arma)}</h3>
           <div class="card-meta">
@@ -894,6 +900,11 @@
     $("#stat-builds").textContent = nf.format(state.data.builds.length);
     $("#stat-armas").textContent = nf.format(state.data.armas.length);
     $("#stat-sin").textContent = nf.format(state.data.sin_build.length);
+
+    // mapa de miniaturas de armas (opcional): {"AK-12": "img/ak_12.png"}
+    state.data.img = await fetch("./data/img.json")
+      .then((r) => (r.ok ? r.json() : {}))
+      .catch(() => ({}));
 
     state.monitor = await fetch("./data/monitor.json")
       .then((r) => (r.ok ? r.json() : null))

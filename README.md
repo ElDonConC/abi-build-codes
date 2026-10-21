@@ -12,8 +12,10 @@ styles.css        estilos (tema oscuro, responsive)
 app.js            buscador, filtros, orden, copiado, favoritos ♥, valoraciones ★, reportes y panel admin
 config.js         credenciales públicas de Supabase (URL + publishable key) para los reportes
 data/*.json       datos volcados desde el xlsx + monitor.json
+data/img/         miniaturas de armas (82/94) + data/img.json (mapa arma→imagen)
 scripts/extract.py extrae el xlsx → data/*.json
 scripts/monitor.py comprueba fuentes, revalida códigos y detecta candidatos nuevos
+scripts/download_imgs.py descarga miniaturas de la wiki de ABI → data/img/
 docs/supabase.sql SQL para crear la tabla de reportes y sus políticas RLS
 discord_bot/       bot de Discord (/arma con autocompletado y menú por clase); ver su README
 .github/workflows/update-data.yml  job diario que ejecuta monitor.py y publica
@@ -111,6 +113,10 @@ Se despliega en tu propio servidor con Docker; instrucciones en
   categoría (nivel, etiqueta, precio y código con su botón Copiar), ordenadas
   de menor a mayor. Dentro del panel hay un enlace *"Ver todas en Builds →"*
   para filtrar la pestaña Builds por esa arma (chip verde «Arma: … ✕»).
+- Cada tarjeta de arma lleva su **miniatura** (Top e Índice): 82 de 94
+  descargadas de la wiki de ABI con `scripts/download_imgs.py`; las 12
+  pendientes muestran sus iniciales (aún no existen en la wiki). Cuando
+  suban alguna, vuelve a ejecutar `python3 scripts/download_imgs.py`.
 
 Sin login, sin cuentas: cada jugador tiene lo suyo en su dispositivo.
 
