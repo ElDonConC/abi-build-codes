@@ -1,13 +1,13 @@
 {
- "updated_at": "2026-10-23T11:16:41+00:00",
+ "updated_at": "2026-10-24T10:35:31+00:00",
  "resumen": {
   "fuentes_total": 35,
   "fuentes_ok": 30,
   "fuentes_bloqueadas": 5,
   "fuentes_error": 5,
-  "codigos_presentes": 191,
+  "codigos_presentes": 150,
   "codigos_ausentes": 11,
-  "codigos_no_comprobables": 222,
+  "codigos_no_comprobables": 263,
   "candidatos_nuevos": 28
  },
  "fuentes": [
@@ -16,210 +16,210 @@
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 153615,
+   "bytes": 154234,
    "error": null,
    "builds_asociados": 17,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/bkj4789",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 72800,
+   "bytes": 73419,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/bvmqh3c",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 73262,
+   "bytes": 73881,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/d50hm6p",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 71987,
+   "bytes": 72606,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/e9dndqu",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 73523,
+   "bytes": 74142,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/hglhy2w",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 73920,
+   "bytes": 74539,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/i5c1bjq",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 72120,
+   "bytes": 72739,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/mtyrras",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 72558,
+   "bytes": 73177,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/o39wzar",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 72161,
+   "bytes": 72780,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/rqyukn2",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 73667,
+   "bytes": 74286,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/xshlkkv",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 68067,
+   "bytes": 68686,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds/y2op3cd",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 71856,
+   "bytes": 72475,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds?weapons=aug",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 152901,
+   "bytes": 153520,
    "error": null,
    "builds_asociados": 4,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds?weapons=m110",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 152584,
+   "bytes": 153203,
    "error": null,
    "builds_asociados": 3,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds?weapons=m4a1",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 153802,
+   "bytes": 154421,
    "error": null,
    "builds_asociados": 1,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds?weapons=svds",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 152367,
+   "bytes": 152986,
    "error": null,
    "builds_asociados": 4,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/builds?weapons=t951",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 152937,
+   "bytes": 153556,
    "error": null,
    "builds_asociados": 2,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/guides/s7-builds",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 532497,
+   "bytes": 533116,
    "error": null,
    "builds_asociados": 11,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/wiki/weapons/ak-74n-assault-rifle",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 87500,
+   "bytes": 88119,
    "error": null,
    "builds_asociados": 2,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/wiki/weapons/h416-assault-rifle",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 89589,
+   "bytes": 90208,
    "error": null,
    "builds_asociados": 2,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://abibuilder.com/wiki/weapons/ump45-micro-smg",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 84419,
+   "bytes": 85038,
    "error": null,
    "builds_asociados": 2,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://arenabreakout-infinite.com/weapons/",
@@ -229,57 +229,57 @@
    "bytes": 0,
    "error": "HTTP 429",
    "builds_asociados": 0,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://gamers.wiki/es/juegos/arena-breakout-infinite/guias/arena-breakout-infinite-importar-y-reparar-builds",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 283844,
+   "bytes": 283829,
    "error": null,
    "builds_asociados": 2,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://steamcommunity.com/app/2073620/announcements/",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 190859,
+   "bytes": 190861,
    "error": null,
    "builds_asociados": 0,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://steamcommunity.com/app/2073620/discussions/0/681860127366781769/",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 55318,
+   "bytes": 55319,
    "error": null,
    "builds_asociados": 0,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 84891,
+   "bytes": 84892,
    "error": null,
    "builds_asociados": 24,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 138390,
+   "bytes": 138389,
    "error": null,
    "builds_asociados": 11,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
@@ -289,7 +289,7 @@
    "bytes": 6976,
    "error": null,
    "builds_asociados": 11,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
@@ -299,27 +299,27 @@
    "bytes": 0,
    "error": "HTTP 429",
    "builds_asociados": 32,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "status": 200,
-   "bloqueada": false,
-   "comprobable": true,
-   "bytes": 5805,
-   "error": null,
-   "builds_asociados": 45,
-   "checked_at": "2026-10-23T11:16:41+00:00"
-  },
-  {
-   "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wmh5an/abiguides7_weapon_choice_mods_and_some_zombie_tips/",
    "status": 429,
    "bloqueada": true,
    "comprobable": false,
    "bytes": 0,
    "error": "HTTP 429",
+   "builds_asociados": 45,
+   "checked_at": "2026-10-24T10:35:31+00:00"
+  },
+  {
+   "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wmh5an/abiguides7_weapon_choice_mods_and_some_zombie_tips/",
+   "status": 200,
+   "bloqueada": false,
+   "comprobable": true,
+   "bytes": 14845,
+   "error": null,
    "builds_asociados": 4,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
@@ -329,7 +329,7 @@
    "bytes": 0,
    "error": "HTTP 429",
    "builds_asociados": 40,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
@@ -339,27 +339,27 @@
    "bytes": 0,
    "error": "HTTP 429",
    "builds_asociados": 41,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 1287963,
+   "bytes": 1260893,
    "error": null,
    "builds_asociados": 50,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "url": "https://www.youtube.com/watch?v=tQ03i3EmOjs",
    "status": 200,
    "bloqueada": false,
    "comprobable": true,
-   "bytes": 1296048,
+   "bytes": 1293792,
    "error": null,
    "builds_asociados": 0,
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   }
  ],
  "codigos": [
@@ -368,3110 +368,3110 @@
    "codigo": "Mod Gun-3frmQU2ebDVDlP4Rf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 2,
    "codigo": "Mod Gun-3fDpOsLUB7ntiP4V4",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 3,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4io",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 4,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Hq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 5,
    "codigo": "Mod Gun-3fSzErerNKw7wP4sf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 6,
    "codigo": "Mod Gun-3fSzErerNKw7wP41b",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 7,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Bb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 8,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP46A",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 9,
    "codigo": "Mod Gun-3fN662nMILad5P4m4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 10,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4sz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 11,
    "codigo": "Mod Gun-3fN662nMILad5P484",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 12,
    "codigo": "Mod Gun-3fFj3hAqjqsoxP4uP",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 13,
    "codigo": "Mod Gun-3frMCofJxygGfP464",
    "fuente": "https://abibuilder.com/builds/mtyrras",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 14,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Qf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 15,
    "codigo": "Mod Gun-3fSzErerNKw7wP4ab",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 16,
    "codigo": "Mod Gun-3fN662nMILad5P4n4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 17,
    "codigo": "Mod Gun-3fN662nMILad5P4k4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 18,
    "codigo": "Mod Gun-3fvzt7Apd7eyEc4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 19,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Kq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 20,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP42o",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 21,
    "codigo": "Mod Gun-3f8AJMIE9UZqqP4B4",
    "fuente": "https://abibuilder.com/builds/hglhy2w",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 22,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Fq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 23,
    "codigo": "Mod Gun-3fSzErerNKw7wP4yf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 24,
    "codigo": "Mod Gun-3fSzErerNKw7wP49b",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 25,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Cb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 26,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4VA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 27,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4cA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 28,
    "codigo": "Mod Gun-3fN662nMILad5P4B4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 29,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4vz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 30,
    "codigo": "Mod Gun-3fN662nMILad5P434",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 31,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP40z",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 32,
    "codigo": "Mod Gun-3fSzErerNKw7wP4bo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 33,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4CA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 34,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4tq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 35,
    "codigo": "Mod Gun-3fFj3hAqjqsoxP4rP",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 36,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4Mb",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 37,
    "codigo": "Mod Gun-3frwi7fw87UEAh4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 38,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Zq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 39,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4Tf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 40,
    "codigo": "Mod Gun-3frmQU2ebDVDlP49b",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 41,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Po",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 42,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Yb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 43,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4dA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 44,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP43A",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 45,
    "codigo": "Mod Gun-3fN662nMILad5P4F4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 46,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Zz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 47,
    "codigo": "Mod Gun-3fN662nMILad5P4M4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 48,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Ph",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 49,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4bO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 50,
    "codigo": "Mod Gun-3fvzt7Apd7eyEV4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 51,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Mq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 52,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4bf",
    "fuente": "https://abibuilder.com/wiki/weapons/ak-74n-assault-rifle",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 53,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Lo",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 54,
    "codigo": "Mod Gun-3fOZqUARWtIZPP4Ef",
    "fuente": "https://abibuilder.com/wiki/weapons/ak-74n-assault-rifle",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 55,
    "codigo": "Mod Gun-3fSzErerNKw7wP41f",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 56,
    "codigo": "Mod Gun-3fSzErerNKw7wP4mb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 57,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4db",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 58,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4eA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 59,
    "codigo": "Mod Gun-3fN662nMILad5P4S4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 60,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Kz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 61,
    "codigo": "Mod Gun-3fN662nMILad5P4T4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 62,
    "codigo": "Mod Gun-3fvzt7Apd7eyEJ4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 63,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP41q",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 64,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4jo",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 65,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Bf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 66,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Bb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 67,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Jb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 68,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4UA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 69,
    "codigo": "Mod Gun-3fN662nMILad5P4c4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 70,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4mz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 71,
    "codigo": "Mod Gun-3fN662nMILad5P4e4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 72,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP48z",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 73,
    "codigo": "Mod Gun-3fvzt7Apd7eyEl4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 74,
    "codigo": "Mod Gun-3fSzErerNKw7wP4af",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 75,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4fO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 76,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4xb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 77,
    "codigo": "Mod Gun-3fSzErerNKw7wP4xo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 78,
    "codigo": "Mod Gun-3fSzErerNKw7wP4tb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 79,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Tb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 80,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4SA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 81,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4TA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 82,
    "codigo": "Mod Gun-3fN662nMILad5P474",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 83,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4fh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 84,
    "codigo": "Mod Gun-3fN662nMILad5P4I4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 85,
    "codigo": "Mod Gun-3fvzt7Apd7eyEE4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 86,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Xb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 87,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4gq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 88,
    "codigo": "Mod Gun-3foAF1n74x8HDP4Sf",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 89,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Hf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 90,
    "codigo": "Mod Gun-3fSzErerNKw7wP4vb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 91,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Qz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 92,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Hz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 93,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Qq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 94,
    "codigo": "Mod Gun-3frwi7fw87UEAA4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 95,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Ff",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 96,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Mf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 97,
    "codigo": "Mod Gun-3fSzErerNKw7wP4yb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 98,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4t4",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 99,
    "codigo": "Mod Gun-3fN662nMILad5P4R4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 100,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Mz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 101,
    "codigo": "Mod Gun-3fN662nMILad5P494",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 102,
    "codigo": "Mod Gun-3fnNktBBeaR3jP4c4",
    "fuente": "https://abibuilder.com/builds?weapons=aug",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 103,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4if",
    "fuente": "https://abibuilder.com/builds?weapons=aug",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 104,
    "codigo": "Mod Gun-3fgQPrj4qSQY2P4dP",
    "fuente": "https://abibuilder.com/builds?weapons=aug",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 105,
    "codigo": "Mod Gun-3fgQPrj4qSQY2P4uP",
    "fuente": "https://abibuilder.com/builds?weapons=aug",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 106,
    "codigo": "Mod Gun-3fSzErerNKw7wP4vf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 107,
    "codigo": "Mod Gun-3fSzErerNKw7wP48b",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 108,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4GA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 109,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Fz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 110,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Go",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 111,
    "codigo": "Mod Gun-3fSzErerNKw7wP4ff",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 112,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4TP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 113,
    "codigo": "Mod Gun-3frwi7fw87UEAP4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 114,
    "codigo": "Mod Gun-3fvzt7Apd7eyE54",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 115,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4sq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 116,
    "codigo": "Mod Gun-3fgQPrj4qSQY2P41b",
    "fuente": "https://abibuilder.com/builds/xshlkkv",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 117,
    "codigo": "Mod Gun-3fSzErerNKw7wP4nb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 118,
    "codigo": "Mod Gun-3fSzErerNKw7wP40f",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 119,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Kf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 120,
    "codigo": "Mod Gun-3fSzErerNKw7wP4kb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 121,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4rA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 122,
    "codigo": "Mod Gun-3fvzt7Apd7eyEr4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 123,
    "codigo": "Mod Gun-3frmQU2ebDVDlP42f",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 124,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Eb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 125,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP40q",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 126,
    "codigo": "Mod Gun-3f62634OOqVoxP4C4",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 127,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4of",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 128,
    "codigo": "Mod Gun-3fSzErerNKw7wP45f",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 129,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Tf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 130,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4wA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 131,
    "codigo": "Mod Gun-3fN662nMILad5P464",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 132,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4yz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 133,
    "codigo": "Mod Gun-3fN662nMILad5P4J4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 134,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP41z",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 135,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Yq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 136,
    "codigo": "Mod Gun-3fUf7o63Z1TyAP4Rb",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 137,
    "codigo": "Mod Gun-3fSzErerNKw7wP40b",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 138,
    "codigo": "Mod Gun-3fSzErerNKw7wP4gf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 139,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4WA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 140,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4CP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 141,
    "codigo": "Mod Gun-3fSzErerNKw7wP4gb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 142,
    "codigo": "Mod Gun-3fSzErerNKw7wP44o",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 143,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4pz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 144,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4tz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 145,
    "codigo": "Mod Gun-3fvzt7Apd7eyEG4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 146,
    "codigo": "Mod Gun-3fDpOsLUB7ntiP4D4",
    "fuente": "https://abibuilder.com/wiki/weapons/h416-assault-rifle",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 147,
    "codigo": "Mod Gun-3fDpOsLUB7ntiP4q4",
    "fuente": "https://abibuilder.com/wiki/weapons/h416-assault-rifle",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 148,
    "codigo": "Mod Gun-3f1H4QCigtDozP4C4",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 149,
    "codigo": "Mod Gun-3fSzErerNKw7wP45b",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 150,
    "codigo": "Mod Gun-3fSzErerNKw7wP4mf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 151,
    "codigo": "Mod Gun-3fSzErerNKw7wP49f",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 152,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4EA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 153,
    "codigo": "Mod Gun-3fN662nMILad5P4W4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 154,
    "codigo": "Mod Gun-3fN662nMILad5P4u4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 155,
    "codigo": "Mod Gun-3fvzt7Apd7eyEO4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 156,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Lb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 157,
    "codigo": "Mod Gun-3fgQPrj4qSQY2P4zf",
    "fuente": "https://abibuilder.com/builds?weapons=m110",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 158,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4iO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 159,
    "codigo": "Mod Gun-3fB2mM9wuLSmjP4H4",
    "fuente": "https://abibuilder.com/builds/i5c1bjq",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 160,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4Jb",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 161,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4EO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 162,
    "codigo": "Mod Gun-3frwi7fw87UEAq4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 163,
    "codigo": "Mod Gun-3fDpOsLUB7ntiP4L4",
    "fuente": "https://abibuilder.com/builds?weapons=m110",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 164,
    "codigo": "Mod Gun-3fOZqUARWtIZPP4jf",
    "fuente": "https://abibuilder.com/builds?weapons=m110",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 165,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Lf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 166,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Ro",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 167,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4HA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 168,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4gA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 169,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4ih",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 170,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4rh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 171,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4jO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 172,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4ef",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 173,
    "codigo": "Mod Gun-3fSzErerNKw7wP4qf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 174,
    "codigo": "Mod Gun-3fSzErerNKw7wP46o",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 175,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4aA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 176,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP42h",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 177,
    "codigo": "Mod Gun-3fvzt7Apd7eyEd4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 178,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4LO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 179,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP45b",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 180,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4UO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 181,
    "codigo": "Mod Gun-3fSzErerNKw7wP4uo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 182,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4KA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 183,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4FA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 184,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Uh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 185,
    "codigo": "Mod Gun-3frwi7fw87UEA44",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 186,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4zo",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 187,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4Ao",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 188,
    "codigo": "Mod Gun-3fSzErerNKw7wP4if",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 189,
    "codigo": "Mod Gun-3fSzErerNKw7wP41o",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 190,
    "codigo": "Mod Gun-3fvzt7Apd7eyE64",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 191,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4aq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 192,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Do",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 193,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Sf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 194,
    "codigo": "Mod Gun-3ftaw4DurQ8kXP4h4",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wmh5an/abiguides7_weapon_choice_mods_and_some_zombie_tips/",
-   "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "presente",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 195,
    "codigo": "Mod Gun-3fFj3hAqjqsoxP4I4",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 196,
    "codigo": "Mod Gun-3fSzErerNKw7wP43b",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 197,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4vq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 198,
    "codigo": "Mod Gun-3frmQU2ebDVDlP47b",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 199,
    "codigo": "Mod Gun-3fQnDljWViWozP4yP",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 200,
    "codigo": "Mod Gun-3fDpOsLUB7ntiP4h4",
    "fuente": "https://abibuilder.com/builds?weapons=m4a1",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 201,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4jf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 202,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Wb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 203,
    "codigo": "Mod Gun-3fSzErerNKw7wP43f",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 204,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Sb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 205,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4XA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 206,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4iA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 207,
    "codigo": "Mod Gun-3fN662nMILad5P4G4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 208,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4nz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 209,
    "codigo": "Mod Gun-3fN662nMILad5P4r4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 210,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4kz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 211,
    "codigo": "Mod Gun-3fvzt7Apd7eyEA4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 212,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4KP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 213,
    "codigo": "Mod Gun-3frwi7fw87UEAz4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 214,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4qP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 215,
    "codigo": "Mod Gun-3fSzErerNKw7wP45o",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 216,
    "codigo": "Mod Gun-3frwi7fw87UEAo4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 217,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Uo",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 218,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP44O",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 219,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Nb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 220,
    "codigo": "Mod Gun-3fSzErerNKw7wP47b",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 221,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Sb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 222,
    "codigo": "Mod Gun-3fSzErerNKw7wP4fo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 223,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4IA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 224,
    "codigo": "Mod Gun-3fN662nMILad5P4s4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 225,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4bh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 226,
    "codigo": "Mod Gun-3fN662nMILad5P4Q4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 227,
    "codigo": "Mod Gun-3fvzt7Apd7eyEe4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 228,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP40q",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 229,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4if",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 230,
    "codigo": "Mod Gun-3fSzErerNKw7wP4nf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 231,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Rb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 232,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4ub",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 233,
    "codigo": "Mod Gun-3fSzErerNKw7wP4kf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 234,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4lA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 235,
    "codigo": "Mod Gun-3fN662nMILad5P4C4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 236,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4az",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 237,
    "codigo": "Mod Gun-3fN662nMILad5P4d4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 238,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP42O",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 239,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4yP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 240,
    "codigo": "Mod Gun-3fVPqMG61iBwhP4k4",
    "fuente": "https://gamers.wiki/es/juegos/arena-breakout-infinite/guias/arena-breakout-infinite-importar-y-reparar-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 241,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Jo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 242,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4vA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 243,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP40A",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 244,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Gh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 245,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4eh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 246,
    "codigo": "Mod Gun-3fSzErerNKw7wP4jf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 247,
    "codigo": "Mod Gun-3fSzErerNKw7wP4To",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 248,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4VO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 249,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4LP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 250,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Xf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 251,
    "codigo": "Mod Gun-3fSzErerNKw7wP4no",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 252,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4NA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 253,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP47A",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 254,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Eh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 255,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP45h",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 256,
    "codigo": "Mod Gun-3fvzt7Apd7eyEq4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 257,
    "codigo": "Mod Gun-3frwi7fw87UEAf4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 258,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4cO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 259,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4XP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 260,
    "codigo": "Mod Gun-3fOZqUARWtIZPP4EP",
    "fuente": "https://abibuilder.com/builds/d50hm6p",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 261,
    "codigo": "Mod Gun-3fSzErerNKw7wP4ko",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 262,
    "codigo": "Mod Gun-3fvzt7Apd7eyEh4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 263,
    "codigo": "Mod Gun-3frwi7fw87UEAb4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 264,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4hO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 265,
    "codigo": "Mod Gun-3ftaw4DurQ8kXP4o4",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wmh5an/abiguides7_weapon_choice_mods_and_some_zombie_tips/",
-   "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "presente",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 266,
    "codigo": "Mod Gun-3fQnDljWViWozP4I4",
    "fuente": "https://abibuilder.com/builds/o39wzar",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 267,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4jb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 268,
    "codigo": "Mod Gun-3fNvWeeJqqt5OP4j4",
    "fuente": "https://abibuilder.com/builds/y2op3cd",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 269,
    "codigo": "Mod Gun-3fSzErerNKw7wP44f",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 270,
    "codigo": "Mod Gun-3fSzErerNKw7wP4jo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 271,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4mA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 272,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP48A",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 273,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4zh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 274,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4hh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 275,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Vo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 276,
    "codigo": "Mod Gun-3fvzt7Apd7eyEU4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 277,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP42b",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 278,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4AO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 279,
    "codigo": "Mod Gun-3flA2lzzOLiUwP4R4",
    "fuente": "https://abibuilder.com/builds/rqyukn2",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 280,
    "codigo": "Mod Gun-3ftaw4DurQ8kXP4A4",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wmh5an/abiguides7_weapon_choice_mods_and_some_zombie_tips/",
-   "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "presente",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 281,
    "codigo": "Mod Gun-3fQnDljWViWozP4PP",
    "fuente": "https://abibuilder.com/builds/bkj4789",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 282,
    "codigo": "Mod Gun-3f4dFSeXdD18jP4xb",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 283,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Pf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 284,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Lo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 285,
    "codigo": "Mod Gun-3fSzErerNKw7wP42o",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 286,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4nA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 287,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4kA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 288,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4qh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 289,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Oh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 290,
    "codigo": "Mod Gun-3fjOnUVAQMy5EP4bb",
    "fuente": "https://abibuilder.com/builds/e9dndqu",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 291,
    "codigo": "Mod Gun-3fSzErerNKw7wP4bf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 292,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Xo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 293,
    "codigo": "Mod Gun-3fSzErerNKw7wP4io",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 294,
    "codigo": "Mod Gun-3fvzt7Apd7eyEP444",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 295,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4PO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 296,
    "codigo": "Mod Gun-3fNch2zSdLd3fP4f4",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 297,
    "codigo": "Mod Gun-3fvzt7Apd7eyE24",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 298,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4DO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 299,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4cf",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 300,
    "codigo": "Mod Gun-3fQnDljWViWozP4qP",
    "fuente": "https://abibuilder.com/builds/bvmqh3c",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 301,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Af",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 302,
    "codigo": "Mod Gun-3fSzErerNKw7wP4ro",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 303,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4yA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 304,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP41A",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 305,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4jh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 306,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4vP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 307,
    "codigo": "Mod Gun-3fvzt7Apd7eyEC4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 308,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP40P",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 309,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4eO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 310,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Ef",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 311,
    "codigo": "Mod Gun-3fSzErerNKw7wP4vo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 312,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4lh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 313,
    "codigo": "Mod Gun-3fvzt7Apd7eyEo4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 314,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP41P",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 315,
    "codigo": "Mod Gun-3fvzt7Apd7eyEi4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 316,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Nq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 317,
    "codigo": "Mod Gun-3ftaw4DurQ8kXP4z4",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wmh5an/abiguides7_weapon_choice_mods_and_some_zombie_tips/",
-   "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "presente",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 318,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP45f",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 319,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Kb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 320,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP43b",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 321,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Yf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 322,
    "codigo": "Mod Gun-3fN662nMILad5P4y4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 323,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4gz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 324,
    "codigo": "Mod Gun-3fN662nMILad5P414",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 325,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4pq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 326,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Hb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 327,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Zf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 328,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Iz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 329,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4fo",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 330,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4bo",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 331,
    "codigo": "Mod Gun-3fSzErerNKw7wP4wf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 332,
    "codigo": "Mod Gun-3fSzErerNKw7wP4yo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 333,
    "codigo": "Mod Gun-3fvzt7Apd7eyED4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 334,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Of",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 335,
    "codigo": "Mod Gun-3fOZqUARWtIZPP4Wf",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 336,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4of",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 337,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4Mf",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 338,
    "codigo": "Mod Gun-3fOZqUARWtIZPP4uf",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 339,
    "codigo": "Mod Gun-3fSzErerNKw7wP4xf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 340,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4sA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 341,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Co",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 342,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Bo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 343,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP43P",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 344,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Wo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 345,
    "codigo": "Mod Gun-3fSzErerNKw7wP4pb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 346,
    "codigo": "Mod Gun-3fSzErerNKw7wP4zo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 347,
    "codigo": "Mod Gun-3fN662nMILad5P4Y4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 348,
    "codigo": "Mod Gun-3fN662nMILad5P4N4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 349,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4ib",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 350,
    "codigo": "Mod Gun-3fSzErerNKw7wP4sb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 351,
    "codigo": "Mod Gun-3fSzErerNKw7wP4pf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 352,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Iq",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 353,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Qb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 354,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4uA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 355,
    "codigo": "Mod Gun-3fSzErerNKw7wP4tf",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 356,
    "codigo": "Mod Gun-3fN662nMILad5P404",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 357,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Nz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 358,
    "codigo": "Mod Gun-3fN662nMILad5P4K4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 359,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP47z",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 360,
    "codigo": "Mod Gun-3fqvYBNaOg0ibP4gP",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 361,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Ib",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 362,
    "codigo": "Mod Gun-3fSzErerNKw7wP4oo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 363,
    "codigo": "Mod Gun-3fN662nMILad5P4H4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 364,
    "codigo": "Mod Gun-3fN662nMILad5P4g4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 365,
    "codigo": "Mod Gun-3fvzt7Apd7eyEL4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 366,
    "codigo": "Mod Gun-3fSzErerNKw7wP4lo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 367,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP45O",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 368,
    "codigo": "Mod Gun-3fSzErerNKw7wP42f",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 369,
    "codigo": "Mod Gun-3fSzErerNKw7wP49o",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 370,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4wh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 371,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP47q",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 372,
    "codigo": "Mod Gun-3fFj3hAqjqsoxP4lP",
    "fuente": "https://abibuilder.com/builds?weapons=t951",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 373,
    "codigo": "Mod Gun-3fQnDljWViWozP4R4",
    "fuente": "https://abibuilder.com/builds?weapons=t951",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 374,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4lf",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 375,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Fb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 376,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4Bf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 377,
    "codigo": "Mod Gun-3frmQU2ebDVDlP4Sf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 378,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Mb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 379,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4qb",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1sfb8d0/gun_build_codes_updated_v3/",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 380,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4JA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 381,
    "codigo": "Mod Gun-3fSzErerNKw7wP47f",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 382,
    "codigo": "Mod Gun-3fSzErerNKw7wP4If",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 383,
    "codigo": "Mod Gun-3fN662nMILad5P4a4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 384,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Yz",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 385,
    "codigo": "Mod Gun-3fN662nMILad5P4v4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 386,
    "codigo": "Mod Gun-3fSzErerNKw7wP48o",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 387,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4lO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 388,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Uf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 389,
    "codigo": "Mod Gun-3fSzErerNKw7wP4mo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 390,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4qO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 391,
    "codigo": "Mod Gun-3fgQPrj4qSQY2P4yo",
    "fuente": "https://abibuilder.com/wiki/weapons/ump45-micro-smg",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 392,
    "codigo": "Mod Gun-3fOZqUARWtIZPP4rf",
    "fuente": "https://abibuilder.com/wiki/weapons/ump45-micro-smg",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 393,
    "codigo": "Mod Gun-3fQZ6cJjnveaEP4D4",
    "fuente": "https://abibuilder.com/builds",
    "resultado": "ausente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 394,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Eo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 395,
    "codigo": "Mod Gun-3frwi7fw87UEAx4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 396,
    "codigo": "Mod Gun-3fSzErerNKw7wP4ao",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 397,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4AP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 398,
    "codigo": "Mod Gun-3fSzErerNKw7wP4of",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 399,
    "codigo": "Mod Gun-3fSzErerNKw7wP4wo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 400,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4OP",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1v4wlah/gun_build_codes_updated_v5/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 401,
    "codigo": "Mod Gun-3frwi7fw87UEAO4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 402,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4OO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 403,
    "codigo": "Mod Gun-3fSzErerNKw7wP4zf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 404,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4xh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 405,
    "codigo": "Mod Gun-3fSzErerNKw7wP4co",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 406,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4xO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 407,
    "codigo": "Mod Gun-3fSzErerNKw7wP4hf",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 408,
    "codigo": "Mod Gun-3f7LVYqlNsYpDP4V4",
    "fuente": "https://gamers.wiki/es/juegos/arena-breakout-infinite/guias/arena-breakout-infinite-importar-y-reparar-builds",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 409,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Dh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 410,
    "codigo": "Mod Gun-3fSzErerNKw7wP4eo",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 411,
    "codigo": "Mod Gun-3fvzt7Apd7eyEx4",
    "fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3577966875",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 412,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Df",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 413,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4QA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 414,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4Xh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 415,
    "codigo": "Mod Gun-3fSzErerNKw7wP43o",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 416,
    "codigo": "Mod Gun-3fSzErerNKw7wP4So",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 417,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4zO",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wub48q/more_detailed_50k320k_3009_gmt_3_2025/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 418,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Zb",
    "fuente": "https://www.youtube.com/watch?v=O1iJDcabwMk",
    "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 419,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4RA",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 420,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP49A",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1wq8yl7/gun_build_codes_for_starter_70k_400k/",
    "resultado": "fuente_bloqueada",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 421,
    "codigo": "Mod Gun-3fN662nMILad5P4p4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 422,
    "codigo": "Mod Gun-3fUTPqqP9rAJxP4oh",
    "fuente": "https://www.reddit.com/r/ArenaBreakoutInfinite/comments/1vt4lxz/gun_builds_100k250k/",
-   "resultado": "presente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "resultado": "fuente_bloqueada",
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 423,
    "codigo": "Mod Gun-3fN662nMILad5P4t4",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   },
   {
    "build_id": 424,
    "codigo": "Mod Gun-3fSzErerNKw7wP4Do",
    "fuente": null,
    "resultado": "sin_fuente",
-   "checked_at": "2026-10-23T11:16:41+00:00"
+   "checked_at": "2026-10-24T10:35:31+00:00"
   }
  ],
  "candidatos": [
   {
    "codigo": "3frmQU2ebDVDlP4Xf",
    "fuente": "https://abibuilder.com/builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4wf",
    "fuente": "https://abibuilder.com/builds?weapons=aug",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3fs8NK3nQ2a0wP4aP",
    "fuente": "https://abibuilder.com/builds?weapons=aug",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3fupDsycOPqRAP4y4",
    "fuente": "https://abibuilder.com/builds?weapons=m110",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP40f",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3fgQPrj4qSQY2P4cb",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3fgQPrj4qSQY2P4lb",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3f0cOGodFbNmPP4ob",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3fs8NK3nQ2a0wP4hb",
    "fuente": "https://abibuilder.com/builds?weapons=svds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3ftIOVzMbPCajP4mP",
    "fuente": "https://abibuilder.com/builds?weapons=t951",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4lf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4Vf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4cf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4Gf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4rf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP46f",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4Wf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4uf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4Cf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP49f",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP48f",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4nf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4kf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4yf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP41f",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4af",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3frmQU2ebDVDlP4sf",
    "fuente": "https://abibuilder.com/guides/s7-builds",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   },
   {
    "codigo": "3fgGUpFkWqOrUz4",
    "fuente": "https://steamcommunity.com/app/2073620/discussions/0/681860127366781769/",
-   "first_seen": "2026-10-23T11:16:41+00:00"
+   "first_seen": "2026-10-24T10:35:31+00:00"
   }
  ],
  "hay_cambios": true
