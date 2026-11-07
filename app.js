@@ -991,9 +991,8 @@
     }
     if (state.monitor && state.monitor.updated_at) {
       const fu = $("#updated-at");
-      fu.textContent = "Última actualización de los datos: "
-        + state.monitor.updated_at.replace("T", " ").replace("+00:00", " UTC")
-        + " · job diario en GitHub Actions";
+      const dStr = state.monitor.updated_at.slice(0, 10);
+      fu.innerHTML = `<span class="sync-icon">⚡</span> Sincronizado: <b>${dStr}</b> · Monitor continuo`;
       fu.hidden = false;
     }
 

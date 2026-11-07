@@ -3,26 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ABI Build Codes — Catálogo de builds de Arena Breakout: Infinite</title>
-<meta name="description" content="Catálogo de códigos de build de armas de Arena Breakout: Infinite con buscador, filtros por clase y nivel económico, y fuentes verificadas.">
-<link rel="stylesheet" href="./styles.css">
+<title>ABI Armory — Catálogo Meta & Builds de Arena Breakout: Infinite</title>
+<meta name="description" content="Base de datos táctica de configuraciones, códigos de armas y precios actualizados para Arena Breakout: Infinite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=20261107_brand">
 </head>
 <body>
 <header class="site-header">
-  <div class="wrap">
+  <div class="wrap header-content">
     <div class="brand">
-      <span class="logo" aria-hidden="true">ABI</span>
-      <div>
-        <h1>Build Codes · Arena Breakout: Infinite</h1>
-        <p class="tagline">Catálogo de códigos de configuración de armas · fuentes y verificación incluidas</p>
+      <div class="brand-badge">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="22" y1="12" x2="18" y2="12"></line>
+          <line x1="6" y1="12" x2="2" y2="12"></line>
+          <line x1="12" y1="6" x2="12" y2="2"></line>
+          <line x1="12" y1="22" x2="12" y2="18"></line>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title-row">
+          <h1>ABI <span>ARMORY</span></h1>
+          <span class="live-status"><span class="pulse-dot"></span> S7 ACTIVO</span>
+        </div>
+        <p class="tagline">Armería táctica y códigos de modificación · Arena Breakout: Infinite</p>
         <p class="updated-at" id="updated-at" hidden></p>
       </div>
     </div>
     <dl class="stats" id="stats">
-      <div><dt>Builds</dt><dd id="stat-builds">—</dd></div>
-      <div><dt>Armas</dt><dd id="stat-armas">—</dd></div>
-      <div><dt>Sin código</dt><dd id="stat-sin">—</dd></div>
-      <div><dt>Códigos verificados</dt><dd id="stat-verif">—</dd></div>
+      <div class="stat-card"><dt>Builds Activas</dt><dd id="stat-builds">—</dd></div>
+      <div class="stat-card"><dt>Armas en Roster</dt><dd id="stat-armas">—</dd></div>
+      <div class="stat-card"><dt>Sin Código</dt><dd id="stat-sin">—</dd></div>
+      <div class="stat-card"><dt>Verificadas</dt><dd id="stat-verif">—</dd></div>
     </dl>
   </div>
 </header>
@@ -173,9 +187,11 @@
 </dialog>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <p>Datos derivados de <code>Catalogo_ABI_CORREGIDO_compatible.xlsx</code>. Los códigos pertenecen a sus fuentes originales.</p>
-    <p class="muted">Proyecto no oficial, sin relación con Morefun Studios ni Level Infinite. · <a href="#reportes">Gestión de reportes</a></p>
+  <div class="wrap footer-content">
+    <div class="footer-brand">
+      <strong>ABI ARMORY</strong> — Inteligencia de armamento y metadatos para Arena Breakout: Infinite.
+    </div>
+    <p class="muted">Desarrollo comunitario independiente. Arena Breakout: Infinite y todos sus activos visuales son marcas registradas de Morefun Studios / Tencent Games. · <a href="#reportes">Panel de Reportes</a></p>
   </div>
 </footer>
 
