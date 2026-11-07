@@ -109,6 +109,10 @@ export default function App() {
     setUser(null);
   };
 
+  // Configuración de administradores autorizados
+  const ADMIN_EMAILS = ['eldamck@gmail.com'];
+  const isAdmin = user && ADMIN_EMAILS.includes(user.email?.toLowerCase());
+
   // Classes & Levels dropdowns
   const clasesList = useMemo(() => {
     const s = new Set(builds.map(b => b.clase).filter(Boolean));
@@ -218,8 +222,8 @@ export default function App() {
             Índice de Armas ({armas.length})
           </button>
 
-          {/* Admin Tab (visible if logged in or viewing #admin) */}
-          {(user || tab === 'admin') && (
+          {/* Admin Tab (visible ONLY for authorized admin) */}
+          {isAdmin && (
             <button
               onClick={() => { setTab('admin'); window.location.hash = '#admin'; }}
               className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
@@ -355,19 +359,25 @@ export default function App() {
         ) : (
           /* Admin View */
           <div>
-            {!user ? (
-              <div className="max-w-md mx-auto text-center py-16 px-4 border border-dashed border-white/10 rounded-2xl bg-[#0f141c]">
-                <ShieldAlert className="w-12 h-12 text-amber-400 mx-auto mb-3" />
-                <h3 className="text-base font-bold text-white mb-1">Acceso Administrativo Requerido</h3>
+            {!isAdmin ? (
+              <div className="max-w-md mx-auto text-center py-16 px-4 border border-dashed border-rose-500/20 rounded-2xl bg-[#0f141c]">
+                <ShieldAlert className="w-12 h-12 text-rose-400 mx-auto mb-3" />
+                <h3 className="text-base font-bold text-white mb-1">Acceso Restringido</h3>
                 <p className="text-xs text-slate-400 mb-5">
-                  Debes iniciar sesión con tu cuenta de administrador de Supabase para revisar y gestionar los reportes.
+                  Esta sección está reservada exclusivamente para el administrador principal (<b>eldamck@gmail.com</b>).
                 </p>
-                <button
-                  onClick={() => setIsAuthOpen(true)}
-                  className="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs cursor-pointer shadow-lg shadow-amber-400/10"
-                >
-                  Iniciar Sesión como Admin
-                </button>
+                {!user ? (
+                  <button
+                    onClick={() => setIsAuthOpen(true)}
+                    className="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs cursor-pointer shadow-lg shadow-amber-400/10"
+                  >
+                    Identificarse como Admin
+                  </button>
+                ) : (
+                  <p className="text-xs text-rose-400 font-semibold">
+                    Tu usuario ({user.email}) no tiene permisos administrativos.
+                  </p>
+                )}
               </div>
             ) : (
               <AdminReports user={user} />
