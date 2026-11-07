@@ -270,6 +270,27 @@
   const nivelOk = (nivel, filtro) =>
     filtro === "Barata" ? String(nivel || "").startsWith("Barata") : nivel === filtro;
 
+  const MESES_MAP = {
+    ene: "01", feb: "02", mar: "03", abr: "04", may: "05", jun: "06",
+    jul: "07", ago: "08", sep: "09", oct: "10", nov: "11", dic: "12"
+  };
+
+  function parseFechaScore(str) {
+    if (!str) return "0000-00-00";
+    const mIso = str.match(/\b(\d{4})-(\d{2})-(\d{2})\b/);
+    if (mIso) return `${mIso[1]}-${mIso[2]}-${mIso[3]}`;
+    const mTxt = str.match(/(\d{1,2})\s+([a-zA-Z]{3})\s+(\d{4})/i);
+    if (mTxt) {
+      const d = mTxt[1].padStart(2, "0");
+      const m = MESES_MAP[mTxt[2].toLowerCase()] || "01";
+      const y = mTxt[3];
+      return `${y}-${m}-${d}`;
+    }
+    const mY = str.match(/\b(202\d)\b/);
+    if (mY) return `${mY[1]}-01-01`;
+    return "0000-00-00";
+  }
+
   function sortBuilds(rows, orden) {
     rows.sort((a, b) => {
       if (orden === "precio_asc" || orden === "precio_desc") {
@@ -285,9 +306,9 @@
         if (d) return d;
       }
       if (orden === "recientes") {
-        const fa = a.fecha || "";
-        const fb = b.fecha || "";
-        if (fa !== fb) return fb.localeCompare(fa, "es");
+        const sa = parseFechaScore(a.fecha);
+        const sb = parseFechaScore(b.fecha);
+        if (sa !== sb) return sb.localeCompare(sa); // 2026-11-07 > 2026-10-16 > 2026-09-30
       }
       return a.arma.localeCompare(b.arma, "es") || (a.etiqueta || "").localeCompare(b.etiqueta || "", "es");
     });
@@ -403,15 +424,20 @@
 
     // Determinar la última actualización de sus builds
     const susBuilds = (state.data.builds || []).filter((b) => b.arma === a.arma);
+    let mejorScore = "";
     let ultimaFecha = "";
     for (const b of susBuilds) {
       if (b.fecha) {
-        if (!ultimaFecha || b.fecha > ultimaFecha) ultimaFecha = b.fecha;
+        const sc = parseFechaScore(b.fecha);
+        if (sc > mejorScore) {
+          mejorScore = sc;
+          ultimaFecha = b.fecha;
+        }
       }
     }
-    const fechaTexto = ultimaFecha
-      ? ultimaFecha.replace("Agregado automáticamente · ", "")
-      : (state.monitor && state.monitor.updated_at ? state.monitor.updated_at.slice(0, 10) : "");
+    const fechaTexto = mejorScore && mejorScore !== "0000-00-00"
+      ? mejorScore
+      : (ultimaFecha ? ultimaFecha.replace("Agregado automáticamente · ", "") : (state.monitor?.updated_at?.slice(0, 10) || ""));
 
     return `
       <article class="card">
