@@ -11,7 +11,7 @@
     monitor: null,
     tierOpen: null,
     f: {
-      q: "", clase: "", nivel: "", orden: "arma", arma: "",
+      q: "", clase: "", nivel: "", orden: "recientes", arma: "",
       qArmas: "", claseArmas: "", ratingArmas: "",
       qLista: "", claseLista: "",
       qFav: "", ordenFav: "arma",
@@ -284,6 +284,11 @@
         const d = (NIVEL_ORDER[a.nivel] ?? 9) - (NIVEL_ORDER[b.nivel] ?? 9);
         if (d) return d;
       }
+      if (orden === "recientes") {
+        const fa = a.fecha || "";
+        const fb = b.fecha || "";
+        if (fa !== fb) return fb.localeCompare(fa, "es");
+      }
       return a.arma.localeCompare(b.arma, "es") || (a.etiqueta || "").localeCompare(b.etiqueta || "", "es");
     });
     return rows;
@@ -314,6 +319,7 @@
     const precio = b.precio_ref ?? b.precio_min;
     const rango = b.precio_min != null && b.precio_max != null && b.precio_min !== b.precio_max
       ? `${money(b.precio_min)} – ${money(b.precio_max)}` : null;
+    const fechaLimpia = (b.fecha || "").replace("Agregado automáticamente · ", "");
     return `
     <article class="card">
       <div class="card-top">
@@ -323,6 +329,7 @@
         <div class="card-meta">
           <span class="badge badge-clase">${esc(b.clase)}</span>
           ${levelBadge(b.nivel)}
+          ${fechaLimpia ? `<span class="badge badge-fecha" title="Fecha de publicación o actualización">📅 ${esc(fechaLimpia)}</span>` : ""}
           ${b.etiqueta ? `<span>${esc(b.etiqueta)}</span>` : ""}
           ${rateWidget(b.arma)}
         </div>
