@@ -18,6 +18,7 @@ export default function App() {
   // Auth state
   const [user, setUser] = useState(null);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [authInitialMode, setAuthInitialMode] = useState('login');
 
   // Report modal state
   const [reportingBuild, setReportingBuild] = useState(null);
@@ -39,14 +40,18 @@ export default function App() {
   const [selectedWeapon, setSelectedWeapon] = useState('');
   const [sortOrder, setSortOrder] = useState('recientes');
 
-  // Supabase Auth listener
+  // Supabase Auth listener & Recovery Token Handler
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
     });
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       setUser(session?.user ?? null);
+      if (event === 'PASSWORD_RECOVERY') {
+        setAuthInitialMode('update_password');
+        setIsAuthOpen(true);
+      }
     });
 
     return () => subscription.unsubscribe();
@@ -380,7 +385,8 @@ export default function App() {
       {/* Auth Modal */}
       <AuthModal
         isOpen={isAuthOpen}
-        onClose={() => setIsAuthOpen(false)}
+        initialMode={authInitialMode}
+        onClose={() => { setIsAuthOpen(false); setAuthInitialMode('login'); }}
         onAuthSuccess={(u) => setUser(u)}
       />
 

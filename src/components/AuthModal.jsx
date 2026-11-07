@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { supabase } from '../supabase';
 import { X, Mail, Lock, User, ArrowRight, CheckCircle2, AlertCircle } from 'lucide-react';
 
-export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
-  const [mode, setMode] = useState('login'); // 'login' | 'register' | 'forgot'
+export default function AuthModal({ isOpen, onClose, onAuthSuccess, initialMode = 'login' }) {
+  const [mode, setMode] = useState(initialMode); // 'login' | 'register' | 'forgot' | 'update_password'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -35,11 +35,23 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
         if (err) throw err;
         setMessage('¡Registro iniciado! Revisa tu correo electrónico para confirmar tu cuenta.');
       } else if (mode === 'forgot') {
+        // Obtenemos la URL de producción actual limpia
+        const currentUrl = window.location.href.split('#')[0];
         const { error: err } = await supabase.auth.resetPasswordForEmail(email, {
-          redirectTo: window.location.origin + window.location.pathname,
+          redirectTo: currentUrl,
         });
         if (err) throw err;
-        setMessage('Se ha enviado un enlace de recuperación a tu correo electrónico.');
+        setMessage('Se ha enviado un nuevo enlace de recuperación a tu correo electrónico.');
+      } else if (mode === 'update_password') {
+        const { data, error: err } = await supabase.auth.updateUser({
+          password: password,
+        });
+        if (err) throw err;
+        setMessage('¡Contraseña actualizada con éxito! Ya puedes iniciar sesión.');
+        setTimeout(() => {
+          setMode('login');
+          setMessage(null);
+        }, 2000);
       }
     } catch (err) {
       setError(err.message || 'Ocurrió un error inesperado');
@@ -54,7 +66,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-all"
+          className="absolute top-4 right-4 p-2 text-slate-400 hover:text-white rounded-lg hover:bg-white/5 transition-all cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -68,11 +80,13 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
             {mode === 'login' && 'Iniciar Sesión'}
             {mode === 'register' && 'Crear Cuenta de Operador'}
             {mode === 'forgot' && 'Recuperar Contraseña'}
+            {mode === 'update_password' && 'Establecer Nueva Contraseña'}
           </h2>
           <p className="text-xs text-slate-400 mt-1">
             {mode === 'login' && 'Accede a tus builds guardadas y favoritos en la nube.'}
             {mode === 'register' && 'Regístrate para guardar y sincronizar tu equipamiento.'}
             {mode === 'forgot' && 'Te enviaremos un correo para restablecer tu clave.'}
+            {mode === 'update_password' && 'Introduce tu nueva contraseña segura.'}
           </p>
         </div>
 
@@ -92,34 +106,36 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">
-              Correo Electrónico
-            </label>
-            <div className="relative">
-              <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="operador@ejemplo.com"
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400"
-              />
+          {mode !== 'update_password' && (
+            <div>
+              <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">
+                Correo Electrónico
+              </label>
+              <div className="relative">
+                <Mail className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="operador@ejemplo.com"
+                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400"
+                />
+              </div>
             </div>
-          </div>
+          )}
 
           {mode !== 'forgot' && (
             <div>
               <div className="flex items-center justify-between mb-1.5">
                 <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                  Contraseña
+                  {mode === 'update_password' ? 'Nueva Contraseña' : 'Contraseña'}
                 </label>
                 {mode === 'login' && (
                   <button
                     type="button"
                     onClick={() => { setMode('forgot'); setError(null); setMessage(null); }}
-                    className="text-xs text-amber-400/90 hover:text-amber-300 transition-colors"
+                    className="text-xs text-amber-400/90 hover:text-amber-300 transition-colors cursor-pointer"
                   >
                     ¿Olvidaste tu contraseña?
                   </button>
@@ -153,6 +169,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
                   {mode === 'login' && 'Entrar al Sistema'}
                   {mode === 'register' && 'Registrar Operador'}
                   {mode === 'forgot' && 'Enviar Correo de Recuperación'}
+                  {mode === 'update_password' && 'Guardar Nueva Contraseña'}
                 </span>
                 <ArrowRight className="w-4 h-4 stroke-[2.5]" />
               </>
@@ -167,7 +184,7 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
               ¿No tienes una cuenta?{' '}
               <button
                 onClick={() => { setMode('register'); setError(null); setMessage(null); }}
-                className="font-bold text-amber-400 hover:underline"
+                className="font-bold text-amber-400 hover:underline cursor-pointer"
               >
                 Regístrate aquí
               </button>
@@ -178,16 +195,16 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
               ¿Ya tienes cuenta?{' '}
               <button
                 onClick={() => { setMode('login'); setError(null); setMessage(null); }}
-                className="font-bold text-amber-400 hover:underline"
+                className="font-bold text-amber-400 hover:underline cursor-pointer"
               >
                 Inicia sesión
               </button>
             </p>
           )}
-          {mode === 'forgot' && (
+          {(mode === 'forgot' || mode === 'update_password') && (
             <button
               onClick={() => { setMode('login'); setError(null); setMessage(null); }}
-              className="font-bold text-amber-400 hover:underline"
+              className="font-bold text-amber-400 hover:underline cursor-pointer"
             >
               ← Volver al inicio de sesión
             </button>
@@ -197,4 +214,3 @@ export default function AuthModal({ isOpen, onClose, onAuthSuccess }) {
     </div>
   );
 }
-

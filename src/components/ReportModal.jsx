@@ -135,3 +135,4 @@ export default function ReportModal({ isOpen, onClose, build }) {
     </div>
   );
 }
+

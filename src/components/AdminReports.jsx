@@ -182,3 +182,4 @@ export default function AdminReports({ user }) {
     </div>
   );
 }
+
