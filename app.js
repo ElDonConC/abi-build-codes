@@ -393,6 +393,19 @@
     const abierto = (t) => state.tierOpen && state.tierOpen.arma === a.arma && state.tierOpen.tier === t;
     const imgRel = state.data.img && state.data.img[a.arma];
     const iniciales = (a.arma.replace(/[^A-Za-z0-9]/g, "").slice(0, 2) || "??").toUpperCase();
+
+    // Determinar la última actualización de sus builds
+    const susBuilds = (state.data.builds || []).filter((b) => b.arma === a.arma);
+    let ultimaFecha = "";
+    for (const b of susBuilds) {
+      if (b.fecha) {
+        if (!ultimaFecha || b.fecha > ultimaFecha) ultimaFecha = b.fecha;
+      }
+    }
+    const fechaTexto = ultimaFecha
+      ? ultimaFecha.replace("Agregado automáticamente · ", "")
+      : (state.monitor && state.monitor.updated_at ? state.monitor.updated_at.slice(0, 10) : "");
+
     return `
       <article class="card">
         <div class="card-top">
@@ -404,6 +417,7 @@
           <h3 class="card-title">${esc(a.arma)}</h3>
           <div class="card-meta">
             <span class="badge badge-clase">${esc(a.clase)}</span>
+            ${fechaTexto ? `<span class="badge badge-fecha" title="Fecha de actualización o verificación">📅 ${esc(fechaTexto)}</span>` : ""}
             ${a.hay_barata === "Sí" ? `<button class="badge badge-barata tier-btn${abierto("Barata") ? " is-on" : ""}" type="button" data-tier="Barata" data-arma="${esc(a.arma)}" aria-expanded="${abierto("Barata")}" title="Ver las builds baratas de ${esc(a.arma)} aquí mismo">Barata</button>` : ""}
             ${a.hay_media === "Sí" ? `<button class="badge badge-media tier-btn${abierto("Media") ? " is-on" : ""}" type="button" data-tier="Media" data-arma="${esc(a.arma)}" aria-expanded="${abierto("Media")}" title="Ver las builds de gama media de ${esc(a.arma)} aquí mismo">Media</button>` : ""}
             ${a.hay_premium === "Sí" ? `<button class="badge badge-premium tier-btn${abierto("Premium") ? " is-on" : ""}" type="button" data-tier="Premium" data-arma="${esc(a.arma)}" aria-expanded="${abierto("Premium")}" title="Ver las builds premium de ${esc(a.arma)} aquí mismo">Premium</button>` : ""}
@@ -426,6 +440,7 @@
           <div>
             <span class="field-label">Fuente del roster</span>
             <span class="field-value">${link(a.url_referencia, a.fuente_roster || "Ver fuente")}</span>
+            ${fechaTexto ? `<span class="field-label" style="margin-top:8px">Última actualización</span><span class="field-value">${esc(fechaTexto)}</span>` : ""}
           </div>
         </div>
         ${(a.estado || a.notas) ? `
