@@ -1,0 +1,272 @@
+[
+ {
+  "id": 1,
+  "arma": "Groza",
+  "clase": "Rifle de asalto",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 2,
+  "arma": "M96",
+  "clase": "Carabina",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 3,
+  "arma": "SKS",
+  "clase": "Carabina",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 4,
+  "arma": "Bizon",
+  "clase": "Subfusil",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 5,
+  "arma": "M3A1",
+  "clase": "Subfusil",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 6,
+  "arma": "MP40",
+  "clase": "Subfusil",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 7,
+  "arma": "MP9",
+  "clase": "Subfusil",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 8,
+  "arma": "PP90",
+  "clase": "Subfusil",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 9,
+  "arma": "Suomi",
+  "clase": "Subfusil",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 10,
+  "arma": "TS5",
+  "clase": "Subfusil",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 11,
+  "arma": "TT85",
+  "clase": "Subfusil",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 12,
+  "arma": "DBR",
+  "clase": "Tirador semiautomático",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 13,
+  "arma": "AR-30",
+  "clase": "Francotirador de cerrojo",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 14,
+  "arma": "AX50",
+  "clase": "Francotirador de cerrojo",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 15,
+  "arma": "DP-12",
+  "clase": "Escopeta",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 16,
+  "arma": "SPR310",
+  "clase": "Escopeta",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 17,
+  "arma": "MG-3",
+  "clase": "Ametralladora ligera",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 18,
+  "arma": "CCZ 52",
+  "clase": "Pistola",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 19,
+  "arma": "F57",
+  "clase": "Pistola",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 20,
+  "arma": "G17",
+  "clase": "Pistola",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 21,
+  "arma": "M45A1",
+  "clase": "Pistola",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 22,
+  "arma": "T05",
+  "clase": "Pistola",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 23,
+  "arma": "T54",
+  "clase": "Pistola",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 24,
+  "arma": "G18C",
+  "clase": "Pistola automática",
+  "estado": "Registrada en índice comunitario; datos visibles",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (patch 1.0.0.142.19, consultada 16 oct 2026)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "El registro comunitario declara datos visibles para esta entrada; al corte consultado, la página base seguía usando datos de 10 sep 2026 (pre-S7)."
+ },
+ {
+  "id": 25,
+  "arma": "M300 (revólver)",
+  "clase": "Revólver",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 26,
+  "arma": "RM44 (revólver)",
+  "clase": "Revólver",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ },
+ {
+  "id": 27,
+  "arma": "MK3 Signal Gun",
+  "clase": "Arma especial / señal",
+  "estado": "Registro comunitario; estadísticas sin verificar",
+  "resultado": "No se encontró código en las fuentes reunidas",
+  "fuente_roster": "ABI Database — Weapon registry (entrada sin stats verificadas)",
+  "url_referencia": "https://arenabreakout-infinite.com/weapons/",
+  "notas": "La base de referencia no verifica estadísticas para esta entrada; confirmar que aparece en el cliente de PC."
+ }
+]

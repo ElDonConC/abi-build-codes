@@ -5,3 +5,11 @@ __pycache__/
 venv/
 node_modules/
 discord_bot/.env
+
+node_modules/
+dist/
+.DS_Store
+*.zip
+*.pdf
+*.dmg
+

@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-tactical: #07090e;
+    --card-tactical: rgba(16, 21, 30, 0.75);
+    --gold: #f5a623;
+  }
+
+  body {
+    background-color: var(--bg-tactical);
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(245, 166, 35, 0.08) 0%, transparent 50%),
+      linear-gradient(180deg, #0b0f16 0%, #07090e 100%);
+    background-attachment: fixed;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f5a623;
+}
