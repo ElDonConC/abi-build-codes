@@ -132,3 +132,4 @@ export default function BuildCard({ build, isFav, onToggleFav }) {
     </article>
   );
 }
+

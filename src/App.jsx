@@ -2,7 +2,9 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Header from './components/Header.jsx';
 import BuildCard from './components/BuildCard.jsx';
 import WeaponCard from './components/WeaponCard.jsx';
-import { Search, Filter, ShieldCheck, Heart, Layers, ArrowUpDown, RefreshCw } from 'lucide-react';
+import AuthModal from './components/AuthModal.jsx';
+import { supabase } from './supabase.js';
+import { Search, Heart, Layers, ShieldCheck, RefreshCw } from 'lucide-react';
 
 export default function App() {
   const [tab, setTab] = useState('builds');
@@ -10,6 +12,12 @@ export default function App() {
   const [armas, setArmas] = useState([]);
   const [imgs, setImgs] = useState({});
   const [monitor, setMonitor] = useState(null);
+  
+  // Auth state
+  const [user, setUser] = useState(null);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
+
+  // Favorites
   const [favs, setFavs] = useState(() => {
     try {
       const saved = localStorage.getItem('abi_favs');
@@ -25,6 +33,20 @@ export default function App() {
   const [selectedNivel, setSelectedNivel] = useState('');
   const [selectedWeapon, setSelectedWeapon] = useState('');
   const [sortOrder, setSortOrder] = useState('recientes');
+
+  // Supabase Auth listener
+  useEffect(() => {
+    // Check active session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user ?? null);
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   // Load Data
   useEffect(() => {
@@ -53,6 +75,11 @@ export default function App() {
       localStorage.setItem('abi_favs', JSON.stringify(next));
       return next;
     });
+  };
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    setUser(null);
   };
 
   // Classes & Levels dropdowns
@@ -121,6 +148,9 @@ export default function App() {
           verif: monitor?.resumen?.codigos_presentes ? `${monitor.resumen.codigos_presentes}/${builds.length}` : '—',
         }}
         updatedAt={monitor?.updated_at ? monitor.updated_at.slice(0, 10) : ''}
+        user={user}
+        onOpenAuth={() => setIsAuthOpen(true)}
+        onSignOut={handleSignOut}
       />
 
       {/* Tabs */}
@@ -128,7 +158,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-2 overflow-x-auto py-2.5">
           <button
             onClick={() => setTab('builds')}
-            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
               tab === 'builds'
                 ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/20'
                 : 'text-slate-400 hover:text-white hover:bg-white/5'
@@ -140,7 +170,7 @@ export default function App() {
 
           <button
             onClick={() => setTab('favoritos')}
-            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
               tab === 'favoritos'
                 ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/20'
                 : 'text-slate-400 hover:text-white hover:bg-white/5'
@@ -152,7 +182,7 @@ export default function App() {
 
           <button
             onClick={() => setTab('armas')}
-            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 ${
+            className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
               tab === 'armas'
                 ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/20'
                 : 'text-slate-400 hover:text-white hover:bg-white/5'
@@ -227,7 +257,7 @@ export default function App() {
                   {selectedWeapon}
                   <button
                     onClick={() => setSelectedWeapon('')}
-                    className="hover:text-white font-black"
+                    className="hover:text-white font-black cursor-pointer"
                   >
                     ×
                   </button>
@@ -292,13 +322,20 @@ export default function App() {
       <footer className="border-t border-white/10 bg-[#080b10] py-6 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4">
           <p className="font-semibold text-slate-400">
-            ABI ARMORY — Desarrollado con React 19, Vite & Tailwind CSS.
+            ABI ARMORY — Desarrollado con React 19, Vite, Tailwind CSS & Supabase Auth.
           </p>
           <p className="text-[11px] text-slate-400 mt-1">
             Arena Breakout: Infinite es marca registrada de Morefun Studios / Tencent Games. Proyecto comunitario independiente.
           </p>
         </div>
       </footer>
+
+      {/* Auth Modal */}
+      <AuthModal
+        isOpen={isAuthOpen}
+        onClose={() => setIsAuthOpen(false)}
+        onAuthSuccess={(u) => setUser(u)}
+      />
     </div>
   );
 }

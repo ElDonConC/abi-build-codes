@@ -8,3 +8,4 @@ export default defineConfig({
   base: './', // Para GitHub Pages relativo
   publicDir: 'public',
 });
+

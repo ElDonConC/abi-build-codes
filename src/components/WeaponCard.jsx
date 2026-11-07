@@ -81,3 +81,4 @@ export default function WeaponCard({ arma, imgRel, buildsCount, onSelectWeapon }
     </article>
   );
 }
+

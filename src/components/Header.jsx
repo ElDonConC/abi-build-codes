@@ -1,7 +1,7 @@
 import React from 'react';
-import { Crosshair, ShieldCheck, Zap } from 'lucide-react';
+import { Crosshair, ShieldCheck, Zap, User, LogOut } from 'lucide-react';
 
-export default function Header({ stats, updatedAt }) {
+export default function Header({ stats, updatedAt, user, onOpenAuth, onSignOut }) {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#07090e]/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -32,19 +32,48 @@ export default function Header({ stats, updatedAt }) {
           </div>
         </div>
 
-        {/* Global Quick Stats */}
-        <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
-          <div className="px-3.5 py-1.5 rounded-lg bg-slate-900/60 border border-white/5 backdrop-blur-sm">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Builds</div>
-            <div className="text-lg font-black text-amber-400 font-mono">{stats.builds || '—'}</div>
+        {/* Global Quick Stats & Auth Profile */}
+        <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
+          {/* Stats Badges */}
+          <div className="flex items-center gap-2">
+            <div className="px-3.5 py-1.5 rounded-lg bg-slate-900/60 border border-white/5 backdrop-blur-sm">
+              <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Builds</div>
+              <div className="text-lg font-black text-amber-400 font-mono">{stats.builds || '—'}</div>
+            </div>
+            <div className="px-3.5 py-1.5 rounded-lg bg-slate-900/60 border border-white/5 backdrop-blur-sm">
+              <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Armas</div>
+              <div className="text-lg font-black text-white font-mono">{stats.armas || '—'}</div>
+            </div>
           </div>
-          <div className="px-3.5 py-1.5 rounded-lg bg-slate-900/60 border border-white/5 backdrop-blur-sm">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Armas</div>
-            <div className="text-lg font-black text-white font-mono">{stats.armas || '—'}</div>
-          </div>
-          <div className="px-3.5 py-1.5 rounded-lg bg-slate-900/60 border border-white/5 backdrop-blur-sm">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Verificadas</div>
-            <div className="text-lg font-black text-emerald-400 font-mono">{stats.verif || '—'}</div>
+
+          {/* User Auth Section */}
+          <div className="pl-2 border-l border-white/10 flex items-center gap-2">
+            {user ? (
+              <div className="flex items-center gap-2.5 bg-slate-900/80 border border-white/10 rounded-xl px-3 py-1.5">
+                <div className="w-7 h-7 rounded-lg bg-amber-400/20 text-amber-400 border border-amber-400/30 flex items-center justify-center font-bold text-xs">
+                  {user.email ? user.email.slice(0, 2).toUpperCase() : 'OP'}
+                </div>
+                <div className="text-left hidden sm:block">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Operador</div>
+                  <div className="text-xs font-semibold text-white truncate max-w-[120px]">{user.email}</div>
+                </div>
+                <button
+                  onClick={onSignOut}
+                  className="p-1.5 text-slate-400 hover:text-rose-400 transition-colors rounded-lg hover:bg-white/5"
+                  title="Cerrar sesión"
+                >
+                  <LogOut className="w-4 h-4" />
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={onOpenAuth}
+                className="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs tracking-wider transition-all flex items-center gap-2 shadow-md shadow-amber-400/10 cursor-pointer"
+              >
+                <User className="w-4 h-4 stroke-[2.5]" />
+                <span>IDENTIFICARSE</span>
+              </button>
+            )}
           </div>
         </div>
       </div>
