@@ -197,8 +197,21 @@ def main():
     print(f"Builds nuevos a incorporar: {len(nuevos_builds)}")
 
     if nuevos_builds:
+        # Actualizar n_builds en armas.json para mantener estadísticas sincronizadas
+        counts = {}
+        for b in builds:
+            w = b.get("arma")
+            counts[w] = counts.get(w, 0) + 1
+
+        for a in armas:
+            a["n_builds"] = counts.get(a["arma"], 0)
+
         with open(builds_path, "w", encoding="utf-8") as f:
             json.dump(builds, f, indent=2, ensure_ascii=False)
+
+        with open(armas_path, "w", encoding="utf-8") as f:
+            json.dump(armas, f, indent=2, ensure_ascii=False)
+
         print(f"Base de datos actualizada con {len(nuevos_builds)} nuevas builds. Total: {len(builds)}")
     else:
         print("No hay nuevas builds para agregar.")
@@ -206,3 +219,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
