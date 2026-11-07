@@ -3,8 +3,10 @@ import Header from './components/Header.jsx';
 import BuildCard from './components/BuildCard.jsx';
 import WeaponCard from './components/WeaponCard.jsx';
 import AuthModal from './components/AuthModal.jsx';
+import ReportModal from './components/ReportModal.jsx';
+import AdminReports from './components/AdminReports.jsx';
 import { supabase } from './supabase.js';
-import { Search, Heart, Layers, ShieldCheck, RefreshCw } from 'lucide-react';
+import { Search, Heart, Layers, ShieldCheck, ShieldAlert, AlertCircle } from 'lucide-react';
 
 export default function App() {
   const [tab, setTab] = useState('builds');
@@ -16,6 +18,9 @@ export default function App() {
   // Auth state
   const [user, setUser] = useState(null);
   const [isAuthOpen, setIsAuthOpen] = useState(false);
+
+  // Report modal state
+  const [reportingBuild, setReportingBuild] = useState(null);
 
   // Favorites
   const [favs, setFavs] = useState(() => {
@@ -36,7 +41,6 @@ export default function App() {
 
   // Supabase Auth listener
   useEffect(() => {
-    // Check active session
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null);
     });
@@ -46,6 +50,18 @@ export default function App() {
     });
 
     return () => subscription.unsubscribe();
+  }, []);
+
+  // Hash listener for direct #admin link
+  useEffect(() => {
+    const handleHash = () => {
+      if (window.location.hash === '#admin' || window.location.hash === '#reportes') {
+        setTab('admin');
+      }
+    };
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
+    return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
   // Load Data
@@ -120,7 +136,6 @@ export default function App() {
       return true;
     });
 
-    // Sorting
     list.sort((a, b) => {
       if (sortOrder === 'recientes') {
         const da = parseDate(a.fecha);
@@ -157,7 +172,7 @@ export default function App() {
       <div className="border-b border-white/10 bg-[#0a0e14]/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex gap-2 overflow-x-auto py-2.5">
           <button
-            onClick={() => setTab('builds')}
+            onClick={() => { setTab('builds'); window.location.hash = ''; }}
             className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
               tab === 'builds'
                 ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/20'
@@ -169,7 +184,7 @@ export default function App() {
           </button>
 
           <button
-            onClick={() => setTab('favoritos')}
+            onClick={() => { setTab('favoritos'); window.location.hash = ''; }}
             className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
               tab === 'favoritos'
                 ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/20'
@@ -181,7 +196,7 @@ export default function App() {
           </button>
 
           <button
-            onClick={() => setTab('armas')}
+            onClick={() => { setTab('armas'); window.location.hash = ''; }}
             className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
               tab === 'armas'
                 ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/20'
@@ -191,16 +206,30 @@ export default function App() {
             <ShieldCheck className="w-3.5 h-3.5" />
             Índice de Armas ({armas.length})
           </button>
+
+          {/* Admin Tab (visible if logged in or viewing #admin) */}
+          {(user || tab === 'admin') && (
+            <button
+              onClick={() => { setTab('admin'); window.location.hash = '#admin'; }}
+              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex items-center gap-2 cursor-pointer ${
+                tab === 'admin'
+                  ? 'bg-amber-400 text-slate-950 shadow-md shadow-amber-400/20'
+                  : 'text-amber-400/80 hover:text-amber-300 hover:bg-amber-400/10'
+              }`}
+            >
+              <ShieldAlert className="w-3.5 h-3.5" />
+              Gestión Reportes
+            </button>
+          )}
         </div>
       </div>
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex-1 w-full">
         {/* Filter Toolbar */}
-        {tab !== 'armas' && (
+        {(tab === 'builds' || tab === 'favoritos') && (
           <div className="mb-6 space-y-3">
             <div className="flex flex-col sm:flex-row gap-3">
-              {/* Search */}
               <div className="relative flex-1">
                 <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
                 <input
@@ -212,7 +241,6 @@ export default function App() {
                 />
               </div>
 
-              {/* Class Dropdown */}
               <select
                 value={selectedClase}
                 onChange={e => setSelectedClase(e.target.value)}
@@ -224,7 +252,6 @@ export default function App() {
                 ))}
               </select>
 
-              {/* Tier Dropdown */}
               <select
                 value={selectedNivel}
                 onChange={e => setSelectedNivel(e.target.value)}
@@ -236,7 +263,6 @@ export default function App() {
                 ))}
               </select>
 
-              {/* Sort Order */}
               <select
                 value={sortOrder}
                 onChange={e => setSortOrder(e.target.value)}
@@ -249,7 +275,6 @@ export default function App() {
               </select>
             </div>
 
-            {/* Active weapon filter badge */}
             {selectedWeapon && (
               <div className="flex items-center gap-2">
                 <span className="text-xs text-slate-400">Filtrando por:</span>
@@ -267,7 +292,7 @@ export default function App() {
           </div>
         )}
 
-        {/* Views */}
+        {/* Tab Views */}
         {tab === 'builds' || tab === 'favoritos' ? (
           <div>
             <div className="text-xs text-slate-400 font-medium mb-3">
@@ -287,12 +312,13 @@ export default function App() {
                     build={b}
                     isFav={favs.includes(b.id)}
                     onToggleFav={toggleFav}
+                    onOpenReport={setReportingBuild}
                   />
                 ))}
               </div>
             )}
           </div>
-        ) : (
+        ) : tab === 'armas' ? (
           <div>
             <div className="text-xs text-slate-400 font-medium mb-3">
               Catálogo de {armas.length} armas registradas en Season 7
@@ -315,6 +341,27 @@ export default function App() {
               })}
             </div>
           </div>
+        ) : (
+          /* Admin View */
+          <div>
+            {!user ? (
+              <div className="max-w-md mx-auto text-center py-16 px-4 border border-dashed border-white/10 rounded-2xl bg-[#0f141c]">
+                <ShieldAlert className="w-12 h-12 text-amber-400 mx-auto mb-3" />
+                <h3 className="text-base font-bold text-white mb-1">Acceso Administrativo Requerido</h3>
+                <p className="text-xs text-slate-400 mb-5">
+                  Debes iniciar sesión con tu cuenta de administrador de Supabase para revisar y gestionar los reportes.
+                </p>
+                <button
+                  onClick={() => setIsAuthOpen(true)}
+                  className="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs cursor-pointer shadow-lg shadow-amber-400/10"
+                >
+                  Iniciar Sesión como Admin
+                </button>
+              </div>
+            ) : (
+              <AdminReports user={user} />
+            )}
+          </div>
         )}
       </main>
 
@@ -322,7 +369,7 @@ export default function App() {
       <footer className="border-t border-white/10 bg-[#080b10] py-6 text-center text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4">
           <p className="font-semibold text-slate-400">
-            ABI ARMORY — Desarrollado con React 19, Vite, Tailwind CSS & Supabase Auth.
+            ABI ARMORY — Plataforma Táctica de Arena Breakout: Infinite · <a href="#admin" onClick={() => setTab('admin')} className="text-amber-400 hover:underline">Acceso Admin</a>
           </p>
           <p className="text-[11px] text-slate-400 mt-1">
             Arena Breakout: Infinite es marca registrada de Morefun Studios / Tencent Games. Proyecto comunitario independiente.
@@ -335,6 +382,13 @@ export default function App() {
         isOpen={isAuthOpen}
         onClose={() => setIsAuthOpen(false)}
         onAuthSuccess={(u) => setUser(u)}
+      />
+
+      {/* Report Modal */}
+      <ReportModal
+        isOpen={!!reportingBuild}
+        onClose={() => setReportingBuild(null)}
+        build={reportingBuild}
       />
     </div>
   );

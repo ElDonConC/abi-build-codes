@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Copy, Check, Heart, ExternalLink, Calendar, Tag } from 'lucide-react';
+import { Copy, Check, Heart, ExternalLink, Calendar, AlertCircle } from 'lucide-react';
 
-export default function BuildCard({ build, isFav, onToggleFav }) {
+export default function BuildCard({ build, isFav, onToggleFav, onOpenReport }) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -30,7 +30,7 @@ export default function BuildCard({ build, isFav, onToggleFav }) {
         <div className="flex items-center gap-2.5 flex-wrap">
           <button
             onClick={() => onToggleFav(build.id)}
-            className={`p-1.5 rounded-lg border transition-all ${
+            className={`p-1.5 rounded-lg border transition-all cursor-pointer ${
               isFav 
                 ? 'bg-rose-500/20 border-rose-500/40 text-rose-400' 
                 : 'bg-white/5 border-white/5 text-slate-400 hover:text-white'
@@ -55,12 +55,21 @@ export default function BuildCard({ build, isFav, onToggleFav }) {
           )}
         </div>
 
-        {fechaClean && (
-          <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-300 bg-white/5 px-2 py-0.5 rounded border border-white/5">
-            <Calendar className="w-3 h-3 text-slate-400" />
-            {fechaClean}
-          </span>
-        )}
+        <div className="flex items-center gap-2">
+          {fechaClean && (
+            <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-300 bg-white/5 px-2 py-0.5 rounded border border-white/5">
+              <Calendar className="w-3 h-3 text-slate-400" />
+              {fechaClean}
+            </span>
+          )}
+          <button
+            onClick={() => onOpenReport(build)}
+            className="p-1 rounded text-slate-500 hover:text-rose-400 transition-colors cursor-pointer"
+            title="Reportar código o error"
+          >
+            <AlertCircle className="w-4 h-4" />
+          </button>
+        </div>
       </div>
 
       {/* Grid Info */}
@@ -76,7 +85,7 @@ export default function BuildCard({ build, isFav, onToggleFav }) {
             </span>
             <button
               onClick={handleCopy}
-              className={`p-1.5 rounded-md flex-none transition-all flex items-center gap-1 font-sans text-[11px] font-bold ${
+              className={`p-1.5 rounded-md flex-none transition-all flex items-center gap-1 font-sans text-[11px] font-bold cursor-pointer ${
                 copied 
                   ? 'bg-emerald-500 text-slate-950 font-bold' 
                   : 'bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-sm'
@@ -132,4 +141,3 @@ export default function BuildCard({ build, isFav, onToggleFav }) {
     </article>
   );
 }
-
