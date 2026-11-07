@@ -46,6 +46,12 @@ export default function App() {
       setUser(session?.user ?? null);
     });
 
+    // Detectar si la URL trae tokens de recuperación en el hash
+    if (window.location.hash.includes('type=recovery') || window.location.hash.includes('access_token=')) {
+      setAuthInitialMode('update_password');
+      setIsAuthOpen(true);
+    }
+
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
       setUser(session?.user ?? null);
       if (event === 'PASSWORD_RECOVERY') {
