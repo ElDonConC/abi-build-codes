@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
-import { Copy, Check, Heart, ExternalLink, Calendar, AlertCircle } from 'lucide-react';
+import { Copy, Check, Heart, ExternalLink, Calendar, AlertCircle, AlertTriangle, EyeOff } from 'lucide-react';
 
-export default function BuildCard({ build, isFav, onToggleFav, onOpenReport }) {
+export default function BuildCard({ build, isFav, onToggleFav, onOpenReport, moderation }) {
   const [copied, setCopied] = useState(false);
 
+  const isOculta = moderation?.estado === 'oculta';
+  const hasWarning = moderation?.estado === 'advertencia';
+  const codigoEfectivo = moderation?.codigo_reemplazo || build.codigo;
+
   const handleCopy = () => {
-    if (!build.codigo) return;
-    navigator.clipboard.writeText(build.codigo);
+    if (!codigoEfectivo) return;
+    navigator.clipboard.writeText(codigoEfectivo);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -24,7 +28,33 @@ export default function BuildCard({ build, isFav, onToggleFav, onOpenReport }) {
   const fechaClean = (build.fecha || '').replace('Agregado automáticamente · ', '');
 
   return (
-    <article className="group relative rounded-xl border border-white/8 bg-[#10151e]/70 backdrop-blur-md p-4 sm:p-5 hover:border-amber-500/30 hover:bg-[#141b27]/90 transition-all duration-200 hover:-translate-y-0.5 shadow-lg shadow-black/40">
+    <article className={`group relative rounded-xl border transition-all duration-200 p-4 sm:p-5 shadow-lg shadow-black/40 ${
+      hasWarning 
+        ? 'border-amber-500/40 bg-[#171412]/80 hover:border-amber-500/70' 
+        : isOculta 
+        ? 'border-rose-500/30 bg-[#160f12]/60 opacity-60'
+        : 'border-white/8 bg-[#10151e]/70 backdrop-blur-md hover:border-amber-500/30 hover:bg-[#141b27]/90 hover:-translate-y-0.5'
+    }`}>
+      {/* Moderation Banner if flagged */}
+      {hasWarning && (
+        <div className="mb-3 px-3 py-1.5 rounded-lg bg-amber-500/15 border border-amber-500/30 text-amber-300 text-xs flex items-center justify-between gap-2">
+          <div className="flex items-center gap-1.5 font-medium">
+            <AlertTriangle className="w-4 h-4 flex-none text-amber-400" />
+            <span>{moderation.motivo || 'Reportado: posible código caducado o inconsistente'}</span>
+          </div>
+          <span className="text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 px-2 py-0.5 rounded text-amber-200">
+            En Revisión
+          </span>
+        </div>
+      )}
+
+      {isOculta && (
+        <div className="mb-3 px-3 py-1.5 rounded-lg bg-rose-500/15 border border-rose-500/30 text-rose-300 text-xs flex items-center gap-1.5 font-medium">
+          <EyeOff className="w-4 h-4 flex-none text-rose-400" />
+          <span>Build desactivada por moderación ({moderation.motivo || 'Código inválido'})</span>
+        </div>
+      )}
+
       {/* Top Header */}
       <div className="flex items-start justify-between gap-3 mb-3">
         <div className="flex items-center gap-2.5 flex-wrap">
@@ -76,12 +106,19 @@ export default function BuildCard({ build, isFav, onToggleFav, onOpenReport }) {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-3 border-t border-white/5 text-xs">
         {/* Code Box */}
         <div className="sm:col-span-1 flex flex-col justify-between">
-          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">
-            Código Modificación
-          </span>
+          <div className="flex items-center justify-between mb-1">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+              Código Modificación
+            </span>
+            {moderation?.codigo_reemplazo && (
+              <span className="text-[10px] font-bold text-emerald-400">
+                Reemplazo oficial
+              </span>
+            )}
+          </div>
           <div className="flex items-center justify-between gap-2 bg-[#080b10] border border-white/10 rounded-lg p-2 font-mono">
             <span className="text-sky-300 truncate font-semibold select-all text-[11.5px]">
-              {build.codigo}
+              {codigoEfectivo}
             </span>
             <button
               onClick={handleCopy}

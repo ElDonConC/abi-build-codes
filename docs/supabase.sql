@@ -1,5 +1,5 @@
 -- Pega este script en Supabase → SQL Editor → Run
--- Crea la tabla de reportes y sus políticas de seguridad (RLS).
+-- Crea la tabla de reportes y de estado de builds con sus políticas de seguridad (RLS).
 
 create table if not exists public.reportes (
   id bigint generated always as identity primary key,
@@ -20,7 +20,7 @@ alter table public.reportes enable row level security;
 -- Cualquiera (sin login) puede insertar un reporte.
 drop policy if exists "cualquiera puede reportar" on public.reportes;
 create policy "cualquiera puede reportar" on public.reportes
-  for insert to anon with check (true);
+  for insert to anon, authenticated with check (true);
 
 -- Solo usuarios autenticados (tu cuenta de admin) pueden leer.
 drop policy if exists "solo admin lee" on public.reportes;
@@ -36,3 +36,25 @@ create policy "solo admin actualiza" on public.reportes
 drop policy if exists "solo admin borra" on public.reportes;
 create policy "solo admin borra" on public.reportes
   for delete to authenticated using (true);
+
+-- Tabla para moderación y estado de builds (ocultar / advertencia / código alternativo)
+create table if not exists public.builds_moderacion (
+  build_id bigint primary key,
+  estado text not null default 'activa' check (estado in ('activa', 'advertencia', 'oculta')),
+  motivo text,
+  codigo_reemplazo text,
+  actualizado_por text,
+  updated_at timestamptz not null default now()
+);
+
+alter table public.builds_moderacion enable row level security;
+
+-- Todos pueden leer el estado de moderación (público para que las tarjetas reflejen el estado)
+drop policy if exists "lectura publica moderacion" on public.builds_moderacion;
+create policy "lectura publica moderacion" on public.builds_moderacion
+  for select to anon, authenticated using (true);
+
+-- Solo admin puede insertar/modificar estados de builds
+drop policy if exists "solo admin gestiona moderacion" on public.builds_moderacion;
+create policy "solo admin gestiona moderacion" on public.builds_moderacion
+  for all to authenticated using (true) with check (true);

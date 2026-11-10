@@ -14,6 +14,7 @@ export default function App() {
   const [armas, setArmas] = useState([]);
   const [imgs, setImgs] = useState({});
   const [monitor, setMonitor] = useState(null);
+  const [moderations, setModerations] = useState({});
   
   // Auth state
   const [user, setUser] = useState(null);
@@ -75,6 +76,19 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHash);
   }, []);
 
+  const loadModerations = async () => {
+    try {
+      const { data, error } = await supabase.from('builds_moderacion').select('*');
+      if (!error && data) {
+        const map = {};
+        data.forEach(m => { map[m.build_id] = m; });
+        setModerations(map);
+      }
+    } catch (e) {
+      // Ignorar si la tabla aún no fue creada
+    }
+  };
+
   // Load Data
   useEffect(() => {
     async function loadData() {
@@ -94,6 +108,7 @@ export default function App() {
       }
     }
     loadData();
+    loadModerations();
   }, []);
 
   const toggleFav = (id) => {
@@ -135,15 +150,20 @@ export default function App() {
   // Filtered builds
   const filteredBuilds = useMemo(() => {
     let list = builds.filter(b => {
+      // Si la build está marcada como 'oculta' en moderación y el usuario no es admin, no mostrarla
+      const mod = moderations[b.id];
+      if (mod?.estado === 'oculta' && !isAdmin) return false;
+
       if (tab === 'favoritos' && !favs.includes(b.id)) return false;
       if (selectedWeapon && b.arma !== selectedWeapon) return false;
       if (selectedClase && b.clase !== selectedClase) return false;
       if (selectedNivel && b.nivel !== selectedNivel) return false;
       if (search) {
         const q = search.toLowerCase();
+        const effectiveCode = mod?.codigo_reemplazo || b.codigo || '';
         const match = 
           b.arma.toLowerCase().includes(q) ||
-          (b.codigo || '').toLowerCase().includes(q) ||
+          effectiveCode.toLowerCase().includes(q) ||
           (b.etiqueta || '').toLowerCase().includes(q) ||
           (b.fuente || '').toLowerCase().includes(q);
         if (!match) return false;
@@ -328,6 +348,7 @@ export default function App() {
                     isFav={favs.includes(b.id)}
                     onToggleFav={toggleFav}
                     onOpenReport={setReportingBuild}
+                    moderation={moderations[b.id]}
                   />
                 ))}
               </div>
@@ -380,7 +401,7 @@ export default function App() {
                 )}
               </div>
             ) : (
-              <AdminReports user={user} />
+              <AdminReports user={user} onModerationChanged={loadModerations} />
             )}
           </div>
         )}
