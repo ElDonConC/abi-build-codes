@@ -3796,5 +3796,41 @@
     "url_fuente": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243",
     "otras_fuentes": null,
     "notas": "Importado automáticamente por GitHub Actions desde https://steamcommunity.com/sharedfiles/filedetails/?id=3592959243."
+  },
+  {
+    "id": 212,
+    "arma": "M4A1",
+    "clase": "Rifle de asalto",
+    "nivel": "Económica",
+    "precio_ref": 184000,
+    "precio_min": 184000,
+    "precio_max": 184000,
+    "etiqueta": "M4A1_Budget",
+    "codigo": "Mod Gun-3fI9k0Al8nfzbP4B4",
+    "codigo_original": "3fI9k0Al8nfzbP4B4",
+    "estado": "Código detectado y revalidado automáticamente",
+    "fuente": "ABI Builder (Monitor diario)",
+    "fecha": "Agregado automáticamente · 2026-11-22",
+    "url_fuente": "https://abibuilder.com/builds?weapons=m4a1",
+    "otras_fuentes": null,
+    "notas": "Importado automáticamente por GitHub Actions desde https://abibuilder.com/builds?weapons=m4a1."
+  },
+  {
+    "id": 213,
+    "arma": "T951",
+    "clase": "Rifle de asalto",
+    "nivel": "Intermedia",
+    "precio_ref": 205812,
+    "precio_min": 205812,
+    "precio_max": 205812,
+    "etiqueta": "T951_Budget",
+    "codigo": "Mod Gun-3fI9k0Al8nfzbP404",
+    "codigo_original": "3fI9k0Al8nfzbP404",
+    "estado": "Código detectado y revalidado automáticamente",
+    "fuente": "ABI Builder (Monitor diario)",
+    "fecha": "Agregado automáticamente · 2026-11-22",
+    "url_fuente": "https://abibuilder.com/builds?weapons=t951",
+    "otras_fuentes": null,
+    "notas": "Importado automáticamente por GitHub Actions desde https://abibuilder.com/builds?weapons=t951."
   }
 ]
