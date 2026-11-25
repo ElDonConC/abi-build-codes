@@ -3886,5 +3886,23 @@
     "url_fuente": "https://abibuilder.com/builds?weapons=m4a1",
     "otras_fuentes": null,
     "notas": "Importado automáticamente por GitHub Actions desde https://abibuilder.com/builds?weapons=m4a1."
+  },
+  {
+    "id": 217,
+    "arma": "AK-74N",
+    "clase": "Rifle de asalto",
+    "nivel": "Económica",
+    "precio_ref": 154178,
+    "precio_min": 154178,
+    "precio_max": 154178,
+    "etiqueta": "Variante ABI Builder",
+    "codigo": "Mod Gun-3fI9k0Al8nfzbP4Z4",
+    "codigo_original": "3fI9k0Al8nfzbP4Z4",
+    "estado": "Código detectado y revalidado automáticamente",
+    "fuente": "ABI Builder (Monitor diario)",
+    "fecha": "Agregado automáticamente · 2026-11-25",
+    "url_fuente": "https://abibuilder.com/wiki/weapons/ak-74n-assault-rifle",
+    "otras_fuentes": null,
+    "notas": "Importado automáticamente por GitHub Actions desde https://abibuilder.com/wiki/weapons/ak-74n-assault-rifle."
   }
 ]
