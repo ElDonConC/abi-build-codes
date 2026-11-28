@@ -28,7 +28,7 @@ CODE_RE = re.compile(r"3f[A-Za-z0-9]{13}(?:[A-Za-z0-9]{2})?")
 SECURITY_MARKERS = ("vercel security checkpoint", "just a moment", "captcha",
                     "attention required", "access denied")
 # Segundos mínimos entre peticiones al mismo host (evita 429, p. ej. Reddit).
-HOST_INTERVAL = {"reddit.com": 10, "abibuilder.com": 1.5, "steamcommunity.com": 2}
+HOST_INTERVAL = {"reddit.com": 10, "abibuilder.com": 1.5, "abiradar.com": 1.5, "steamcommunity.com": 2}
 _last_hit = {}
 
 
@@ -153,6 +153,11 @@ def main():
     for f in fuentes:
         if f.get("url"):
             urls.setdefault(f["url"], {"build_ids": [], "refs": 0})["refs"] += 1
+    for extra_url in (
+        "https://abibuilder.com/builds?weapons=akm",
+        "https://abiradar.com/",
+    ):
+        urls.setdefault(extra_url, {"build_ids": [], "refs": 0})["refs"] += 1
 
     print(f"{len(urls)} URLs únicas a comprobar")
 
@@ -216,7 +221,7 @@ def main():
         if info["status"] != 200 or url not in textos:
             continue
         host = url.split("/")[2]
-        if not any(h in host for h in ("abibuilder.com", "steamcommunity.com", "reddit.com")):
+        if not any(h in host for h in ("abibuilder.com", "abiradar.com", "steamcommunity.com", "reddit.com")):
             continue
         texto = textos[url]
         for m in CODE_RE.finditer(texto):
