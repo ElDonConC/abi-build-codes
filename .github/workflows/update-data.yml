@@ -51,6 +51,12 @@ jobs:
             echo "Sin cambios de datos que commitear"
           fi
 
+      - name: Mantener activa la base de datos Supabase
+        run: |
+          curl -fsS "https://nfrsxyutpuyfprzyvvol.supabase.co/rest/v1/builds_moderacion?select=build_id&limit=1" \
+            -H "apikey: sb_publishable_XTdZhum4xrC_ARCn5-Xoyw_1K1ZUET4" \
+            -H "Authorization: Bearer sb_publishable_XTdZhum4xrC_ARCn5-Xoyw_1K1ZUET4" > /dev/null || true
+
       - name: Instalar dependencias web
         run: npm ci
 
