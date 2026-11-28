@@ -3904,23 +3904,5 @@
     "url_fuente": "https://abibuilder.com/wiki/weapons/ak-74n-assault-rifle",
     "otras_fuentes": null,
     "notas": "Importado automáticamente por GitHub Actions desde https://abibuilder.com/wiki/weapons/ak-74n-assault-rifle."
-  },
-  {
-    "id": 218,
-    "arma": "AKM",
-    "clase": "Rifle de asalto",
-    "nivel": "Económica",
-    "precio_ref": 114000,
-    "precio_min": 114000,
-    "precio_max": 114000,
-    "etiqueta": "AKM Budget",
-    "codigo": "Mod Gun-3fgQPrj4qSQY2P45P",
-    "codigo_original": "3fgQPrj4qSQY2P45P",
-    "estado": "Código detectado y revalidado automáticamente",
-    "fuente": "ABI Builder (Monitor diario)",
-    "fecha": "Agregado automáticamente · 2026-11-28",
-    "url_fuente": "https://abibuilder.com/builds?weapons=akm",
-    "otras_fuentes": null,
-    "notas": "Importado automáticamente por GitHub Actions desde https://abibuilder.com/builds?weapons=akm."
   }
 ]
